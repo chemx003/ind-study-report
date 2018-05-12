@@ -25,50 +25,254 @@ media}
 
 \pagenumbering{arabic}
 
+%----------------------------  INTRODUCTION  ----------------------------------%
+%  The purpose of this section here is to introduce the big picture and outline 
+%  the rest of the paper. Be sure to do a lot of contextualizing and make 
+%  sure the audience knows where you are going.
+%------------------------------------------------------------------------------%
 \section{Introduction}
 Heterogeneous materials appear in all kinds of forms and can be found naturally 
 and in industrial applications. Recently, interest has grown in artificially
 constructed phononic media which can alter the propagation of acoustic and
 elastic waves. A phononic medium is a heterogeneous material which possesses
-spatial periodicity in the arrangement of its constituents, its microstructure,
-or its boundary conditions. As a result of this periodic structure, it has been 
-shown that there exists band gaps for which certain frequencies of waves cannot 
-propagate.
+spatial periodicity in the arrangement of its constituents, its structure,
+or the boundary conditions applied to it. As a result of this periodic 
+structure, it has been shown that there exists band gaps for which certain 
+frequencies of waves cannot propagate. These frequency band gaps have been 
+utilized in many engineering applications related to vibrations and the control 
+of acoustic and elastic waves.
 
-\subsection{Phononic media}
-As mentioned before, the field of phononic media has grown tremendously in the 
-past two decades and continues to grow today. The existence of band gaps in 
-these materials has resulted in many practical applications in subwavelength 
-imaging, vibration, control and even acoustic cloaking.
-
-\subsection{Mechanisms for band gap formation}
-The formation of band gaps and effect of dispersion on waves is material 
-dependent, but the underlying physics is the same. The two mechanisms are
+There were three objectives for this independent study:
 \begin{enumerate}
-	\item \emph{Bragg scattering}: At certain frequencies, a wave interacts 
-	with the structure of the material in a way that causes deconstructive 
-	interference. Here the behavior is dependent on the periodicity of the 
-	material \cite{laude15}.
-	\item \emph{Local resonance}: When resonators are placed inside of a 
-	materials, interactions occur around the resonating frequency of the 
-	included resonators. At these frequencies, the resonators begin to absorb 
-	energy from incident waves and thus affect the propagation of the waves.
+	\item Study heterogeneous materials and the associated mathematical methods 
+	used to model their behavior
+	\item Study wave propagation in phononic media and the associated 
+	computational methods (mainly finite elements)
+	\item Complete a computational project related to the above studies 
 \end{enumerate}
-To see the effect of these phenomena on the dispersion relation itself, we 
-refer to Figure \ref{fig:bslr} from Laude's book.
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=.75\textwidth]{bandgaps.png}
-	\caption{Given the resonant frequency of inclusions and the periodicity of 
-	the material we can get an idea of where the band gaps will form. Figure 
-	from \cite{laude15}}
-	\label{fig:bslr}
-\end{figure}
-When resonators are included we can predict that a band gap will form around 
-the resonant frequency. This band gap is in addition to the band gap caused by 
-Bragg scattering, and occasionally the two band gaps can overlap to form a 
-larger one.
+In this report, the focus will be on the later two items as the study of 
+heterogeneous materials was completed via a set of exercises from the lecture 
+notes of Prof. Ponte-Casta\~neda \cite{pontenotes}. To this end, phononic media 
+and their applications are presented, and the interesting behavior that is the 
+presence of frequency band gaps where waves cannot propagate is described. 
+After introducing these concepts, the history and state of active research is 
+outlined in the literature review section. Dispersion relations and their 
+relation to studies in phononic media are introduced and will be central to 
+further studies in the report. While it is favorable to have exact analytical 
+expressions for these dispersion relations, it is not possible to calculate 
+this by hand for more complicated materials. As such we must utilize 
+computational methods which are presented in varying levels of detail. For 
+future research, it is planned to use the finite element method, and this is 
+the computational method that is used in the independent study. Finite elements 
+is used in the 1D and 2D case in order to obtain the dispersion relation for a 
+variety of materials. These studies will be integral for further research that 
+will advance the field.
 
+%----------------------------  PHONONIC MEDIA  --------------------------------%
+%  This subsection is dedicatied to illustrating what these materials can do 
+%  here you want to get the audience excited about phononic media. What can
+%  these things do that regular materials can't make a point of this!
+%------------------------------------------------------------------------------%
+\subsection{Phononic media}
+%  Examples of phononic media
+As mentioned before, the field of phononic media has grown tremendously in the 
+past two decades and continues to grow today. Examples of phononic media 
+include mass spring systems, laminates, and materials embedded with a periodic 
+lattice of inclusions (or voids). There are several levels of classification 
+within phononic media. In the literature a distinction, is made between 
+phononic materials and phononic structures. Phononic materials are infinite in 
+extent while phononic structures are finite in extent \cite{hussein10}. 
+Phononic crystals refer to a heterogenous material or non-uniform material the 
+material phases that may be fluid or solid which have a periodic arrangement in 
+space \cite{hussein14}. The constituents may be arranged in such a way as to 
+have a band gap in a certain frequency range or may even be tunable such as by 
+modulating an outside field the material properties may be changed in order to 
+move the band gap. A further class of phononic media that is of much interest 
+is the metamaterial. Metamaterials possess ``local resonance" which is a 
+different way for producing band gaps that is not seen in phononic crystals. 
+
+%  Applications of phononic media
+The existence of frequency band gaps in these materials has resulted in many 
+practical applications such as:
+\begin{itemize}
+	\item \emph{Vibration control}: The simplest application would be to 
+	incorporate these phononic media in the construction of buildings or 
+	vehicles with band gaps in the range of frequencies of acoustic or elastic 
+	waves found in the operating environment in order to provide insulation.
+	\item \emph{Acoustic/elastic waveguides}: By simply removing inclusions in 
+	a phononic crystal it has been found that wave propagation can be localized 
+	to certain areas within the material \cite{hou12}. 
+	\item \emph{Acoustic diodes}: It has been found that sonic 
+	crystals, which are phononic crystals where one or more of the material 
+	phases is a liquid, can be used in 1D acoustic diodes which allow certain 
+	waves to propagate in one direction but not in the opposite direction 
+	\cite{zhang10}.
+	%  I need to read more on these last two
+	\item \emph{Subwavelength imaging}:
+	\item \emph{Cloaking}:
+\end{itemize}
+This, of course, is a non-exhaustive list with new studies in materials with 
+tunable properties, damping, non-linear affects, and disorder other novel and 
+useful applications will arise.
+
+%------------------------------  BAND GAPS  -----------------------------------%
+%  Why can these phononic media do what they do? We are still not talking about
+%  anything that you have done yet. Setting the stage still.
+%------------------------------------------------------------------------------%
+\subsection{Band gaps}
+All of the above applications rely on presence of band gaps in these phononic 
+media. There are two mechanisms which cause band gaps to form:
+\begin{enumerate}
+	\item \emph{Bragg scattering}: At certain frequencies, waves can interact 
+	with the structure of a material in such a way that reflections off of 
+	inclusions or the structure of material itself destructively interfere with 
+	the incident wave. Here, the behavior is dependent on the periodicity in 
+	the arrangement of the material phases or structure of the material 
+	\cite{laude15}.
+	\item \emph{Local resonance}: When resonators are placed inside of a 
+	materials, interactions occur at the resonant frequency of the resonator. 
+	At these frequencies, the resonators begin to absorb energy from incident 
+	waves and produce a band gap.
+\end{enumerate}
+These two mechanisms have predictable effects on the frequency band structure 
+of phononic media. 
+
+%  I thought I just read in hussein that bragg scattering for low frequencies 
+%requires larger spacing ... etc.
+
+%---------------------------  LITERATURE REVIEW   -----------------------------%
+%  You have told the audience about phononic crystals and why they are special.
+%  Now it is time to contextualize this field of research and get them excited 
+%  about not just the special properties, but the plethora of research 
+%  oppurtunities still available in this field. Even before the histor and 
+%  active fields, I would start by motivating the theoretical research like 
+%  Hussein does. Read that section again.
+%------------------------------------------------------------------------------%
+\section{Literature review}
+
+%------------------------  HISTORY OF PHONONIC MEDIA   ------------------------%
+%  You don't need to be too verbose here. Yes, include when these materials 
+%  first studied in order to show how young the field is. Really, this is the 
+% part where you show what has been done. You have to know what has been 
+%  done before you do anything.
+%------------------------------------------------------------------------------%
+\subsection{History of phononic media}
+
+%----------------- ACTIVE REASEARCH AREAS AND OPEN FIELDS    ------------------%
+%  This is where you need to be verbose. Show the audience you know where this
+%  field of research is today and your place in it. Inculde plenty of references
+%------------------------------------------------------------------------------%
+\subsection{Active research areas and open fields}
+
+%---------------------------------  DAMPING   ---------------------------------%
+%  You have many good references here but only from Hussein and Frazier. Try to 
+%%%  include references from two other authors. Damping is pretty easy to write 
+%%%%  about
+%------------------------------------------------------------------------------%
+\subsubsection{Damping}
+In applications, energy is often lost through damping. This will affect the 
+propagation of waves, and thus models that consider this effect will better 
+represent the actual behavior of a material. Within the body of research on 
+damping, studies focus on either harmonic wave propagation or free wave 
+propagation. A study of harmonic wave propagation entails one in which the wave 
+numbers are confined to be real while free wave propagation allows for complex 
+wave numbers (and as a result evanescent waves). Standard computational methods 
+as discussed in Section \ref{methods} are used in both types of studies. 
+
+In \cite{hussein14}, dispersion relations are first obtained for a 1D diatomic 
+lattice with linear viscous damping. The method of analysis for this example is 
+then extended to a 1D lattice with internal resonators and also a 2D phononic 
+crystal with square unit cells embedded with a single, denser square inclusion. 
+The general result of including damping is the collapase of the band gap 
+between the optical and acoustic branches of the dispersion relation. This 
+occurs such that the optical branch lowers proportional to the amount of 
+damping.
+
+%----------------------------- NONLINEAR SYSTEMS ------------------------------%
+%  Same thing here. You will need to branch out in terms of references here.
+%------------------------------------------------------------------------------%
+\subsubsection{Nonlinear systems}
+Relative to linear studies, there have been fewer studies of nonlinear phononic 
+materials. Due to nonlinearities, Bloch's theorem cannot not be applied in the 
+same way to obtain an eigenvalue problem for the dispersion relation -at least 
+not immediately. Perturbation techniques have been developed as early as 1994 
+in order to study weakly non-linear systems. These techniques ``expand" the 
+governing equations and produce a linear equation while instead considering the 
+nonlinearities to be a part of forcing term.
+
+%-------------------------- DISORDERED MATERIALS ------------------------------%
+%  This is also an easy one to write about. The challenges and the reason why
+%  there are so few references is obvious.
+%------------------------------------------------------------------------------%
+\subsubsection{Disordered materials}
+Just as sparse as nonlinear systems, the study of phononic media with disorder 
+has not been widely researched. Incorporating even small amounts of disorder 
+can increase the predictablility of a model much like damping. In the 
+manufacturing process perfect periodicity may not be able to be acheived. The 
+difficulty in disordered phononic media is that the conventional method of 
+Bloch wave analysis does not work. A requirement of Floquet-Bloch theory is 
+that the material properties vary periodically with a known period. A single 
+unit cell can no longer model the behavior of the entire system if there is 
+even mild disorder.
+
+Recently, there has been research done on so called hyperuniform phononic 
+crystals. Hyperuniformity is a way of categorizing point distributions. It 
+specifically refers to distributions with the fluctuations in density completly 
+vanish as the window of observation increases. Despite not having any 
+periodicity, and therefore no Bragg peaks, there still exists band gaps.
+
+An earlier paper in 2010 by, examined a 2d phononic medium with circular 
+inclusions arranged in a lattice. Disorder was added to the system by 
+increasing or decreasing the size of the inclusions or displacing them by some 
+small amount. Here they used the plane-wave expansion method. Of course, due to 
+the added disorder they were no longer able to look at a single unit cell and 
+instead define a `supercell' for which the analysis was carried out. 
+
+
+%--------------------- DYANMIC EFFECTIVE PROPERTIES  --------------------------%
+%  Tie this into homogenzation. Remember this is a part of your independent 
+%  study and you should have some insight here.
+%------------------------------------------------------------------------------%
+\subsubsection{Dynamic effective properties}
+With any heterogeneous material, it is of interest to be able to define 
+effective properties and model the material as one homogenous material. This 
+reduces the computational cost of modeling. Most analysis in homogenization has 
+been done in the long wavelength limit. Trying to perform a similar type of 
+analysis on a material with dispersive properties results in the loss of this 
+behavior. The problem here lies in the volume averages used to calculate the 
+effective properties. The richness in behavior of these phononic media is due 
+to the relative motion of contituents as such the behavior is said to be 
+nonlocal and this must be taken into affect when trying to formulate dynamic 
+effective properties.
+
+Michael Frazier has done some work calculating the dynamic effective viscosity 
+in damped 1D layered structures.
+
+%--------------------------- DISPERSION RELATIONS  ----------------------------%
+%  Okay so now you've been doing a lot of talking about past and current 
+%  research. You absolutely cannot just jump into dispersion relations. This is
+%  going to need some good framing. i.e. to do research we need to know about
+%  this. This section needs to highlight the importance of dispersion relation
+%  and just how much information is jam packed into this little thing
+%------------------------------------------------------------------------------%
+\section{Dispersion relations}
+Dispersion relations provide all of the information necessary to characterize 
+the behavior of waves propagating in a phononic medium. Mathematically, they 
+are a relationship between the frequency of a wave and its wavenumber. From 
+this relationship, it is possible to determine the phase velocity and group 
+velocity. Dispersion relationships immediately indicate where the frequency 
+band gaps of a system are. For this reason, they are also called frequency band 
+diagrams or frequency band structures.
+
+As will be shown, there are a variety of waves to calculate dispersion 
+relations, however, there is a commonality between each type of analysis. This 
+common feature is the application of Floquet-Bloch theory.
+
+%-------------------------- FLOQUET-BLOCH THEOREM  ----------------------------%
+%  To derive dispersion relations you need to know this theorm. It is an 
+%  important result and should not be presented without proof. Important to
+%  maintain a connection with dispersion relations and phononic media here.
+%------------------------------------------------------------------------------%
 \subsection{Floquet-Bloch theorem} \label{fbt}
 Given the equation
 \begin{equation} \label{floqueteqn}
@@ -99,97 +303,16 @@ u(\mathbf{r}) = \tilde{u}(\mathbf{r}) e^{-i\mathbf{k} \cdot \mathbf{r}}
 These eigensolutions are called \emph{Bloch waves} and equation 
 (\ref{blocheqn}) is called the periodic Helmholtz equation.
 
-\section{Current research in the field}
-\subsection{Damping}
-In applications, energy is often lost through damping. This will affect the 
-propagation of waves, and thus models that consider this effect will better 
-represent the actual behavior of a material. Within the body of research on 
-damping, studies focus on either harmonic wave propagation or free wave 
-propagation. A study of harmonic wave propagation entails one in which the wave 
-numbers are confined to be real while free wave propagation allows for complex 
-wave numbers (and as a result evanescent waves). Standard computational methods 
-as discussed in Section \ref{methods} are used in both types of studies. 
+%-------------------- FIRST PRINCIPLES AND EXAMPLE PROBLEMS -------------------%
+%  Here we dive into more technical analysis. The audience is introduced to 
+%  dispersion relations mathematically and also phase and group velocities. Also
+%  Introduced is the inverse and direct method. Still want to stay connected,
+%  but don't need to try too hard as long as you have done a good job of 
+%  framing earlier
+%------------------------------------------------------------------------------%
+\subsection{First principles and example problems}
 
-In \cite{hussein14}, dispersion relations are first obtained for a 1D diatomic 
-lattice with linear viscous damping. The method of analysis for this example is 
-then extended to a 1D lattice with internal resonators and also a 2D phononic 
-crystal with square unit cells embedded with a single, denser square inclusion. 
-The general result of including damping is the collapase of the band gap 
-between the optical and acoustic branches of the dispersion relation. This 
-occurs such that the optical branch lowers proportional to the amount of 
-damping.
-
-\subsection{Nonlinear systems}
-Relative to linear studies, there have been fewer studies of nonlinear phononic 
-materials. Due to nonlinearities, Bloch's theorem cannot not be applied in the 
-same way to obtain an eigenvalue problem for the dispersion relation -at least 
-not immediately. Perturbation techniques have been developed as early as 1994 
-in order to study weakly non-linear systems. These techniques ``expand" the 
-governing equations and produce a linear equation while instead considering the 
-nonlinearities to be a part of forcing term.
-
-\subsection{Disordered materials}
-Just as sparse as nonlinear systems, the study of phononic media with disorder 
-has not been widely researched. Incorporating even small amounts of disorder 
-can increase the predictablility of a model much like damping. In the 
-manufacturing process perfect periodicity may not be able to be acheived. The 
-difficulty in disordered phononic media is that the conventional method of 
-Bloch wave analysis does not work. A requirement of Floquet-Bloch theory is 
-that the material properties vary periodically with a known period. A single 
-unit cell can no longer model the behavior of the entire system if there is 
-even mild disorder.
-
-Recently, there has been research done on so called hyperuniform phononic 
-crystals. Hyperuniformity is a way of categorizing point distributions. It 
-specifically refers to distributions with the fluctuations in density completly 
-vanish as the window of observation increases. Despite not having any 
-periodicity, and therefore no Bragg peaks, there still exists band gaps.
-
-An earlier paper in 2010 by, examined a 2d phononic medium with circular 
-inclusions arranged in a lattice. Disorder was added to the system by 
-increasing or decreasing the size of the inclusions or displacing them by some 
-small amount. Here they used the plane-wave expansion method. Of course, due to 
-the added disorder they were no longer able to look at a single unit cell and 
-instead define a `supercell' for which the analysis was carried out. 
-
-\subsection{Dynamic effective properties}
-With any heterogeneous material, it is of interest to be able to define 
-effective properties and model the material as one homogenous material. This 
-reduces the computational cost of modeling. Most analysis in homogenization has 
-been done in the long wavelength limit. Trying to perform a similar type of 
-analysis on a material with dispersive properties results in the loss of this 
-behavior. The problem here lies in the volume averages used to calculate the 
-effective properties. The richness in behavior of these phononic media is due 
-to the relative motion of contituents as such the behavior is said to be 
-nonlocal and this must be taken into affect when trying to formulate dynamic 
-effective properties.
-
-Michael Frazier has done some work calculating the dynamic effective viscosity 
-in damped 1D layered structures.
-
-\section{Dispersion relations}
-Dispersion relations provide all of the information necessary to characterize 
-the behavior of waves propagating in a phononic medium. Mathematically, they 
-are a relationship between the frequency of a wave and its wavenumber. From 
-this relationship, it is possible to determine the phase velocity and group 
-velocity. Dispersion relationships immediately indicate where the frequency 
-band gaps of a system are. For this reason, they are also called frequency band 
-diagrams or frequency band structures.
-
-As will be shown, there are a variety of waves to calculate dispersion 
-relations, however, there is a commonality between each type of analysis. This 
-common feature is the application of Floquet-Bloch theory.
-
-\subsection{Transfer matrix method}
-The transfer matrix method enforces continuity between layers of a system. At 
-the interface between two unit cells the displacements must be equal and the 
-forces or tractions must be as well. First, a relationship between these 
-variables must be derived from one end of the unit cell to the other end. This 
-results in the formulation of a so called transfer matrix. This type of 
-analysis is completed by of course applying Bloch's theorem to relate the 
-displacements and forces in one cell to another.
-
-\subsection{Scalar wave equation}
+\subsubsection{Scalar wave equation}
 The scalar wave equation is 
 \begin{equation} \label{swe}
 \frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}
@@ -234,7 +357,7 @@ dispersion we expect a relation in the form (\ref{wk}) and also
 v_p = v_p(\omega) = v_p(\omega(k))
 \end{equation}
 
-\subsection{Monatomic lattice} \label{monatomic}
+\subsubsection{Monatomic lattice} \label{monatomic}
 Take a system of $n$ masses and springs like in Figure \ref{fig:ms} 
 \begin{figure}[!htbp]
 	\centering
@@ -311,7 +434,7 @@ Solving for wavenumber in terms of a given frequency
 \mu = \arccos{\left(1-\frac{\Omega^2}{2}\right)}
 \end{equation}
 
-\subsection{Diatomic lattice}
+\subsubsection{Diatomic lattice}
 Next, we consider a diatomic lattice as shown in Figure \ref{fig:dms}.
 \begin{figure}[!htbp]
 	\centering
@@ -370,6 +493,23 @@ Calculating the determinant of the matrix on the left we get the relation
 \sqrt{\left(\frac{m_1+m_2}{m_1m_2}\right) - \frac{4(\sin{ka})^2}{m_1m_2}}}
 \end{equation}
 
+\subsubsection{Transfer matrix method}
+The transfer matrix method enforces continuity between layers of a system. At 
+the interface between two unit cells the displacements must be equal and the 
+forces or tractions must be as well. First, a relationship between these 
+variables must be derived from one end of the unit cell to the other end. This 
+results in the formulation of a so called transfer matrix. This type of 
+analysis is completed by of course applying Bloch's theorem to relate the 
+displacements and forces in one cell to another.
+
+%----------------- COMPUTATIONAL METHODS FOR PHONONIC MEDIA -------------------%
+%  We jut got done talking a lot about dispersion relations. To make this jump
+%  Computational methods we need make a point about how for nontrivial systems
+%  and continuum systems that sort of analysis isn't as realistic
+%  also talk about why we are specializing in finite elements. When you get to
+%  finite elements explain what is actually happening in the code for people
+%  who aren't as familiar with these computational methods
+%------------------------------------------------------------------------------%
 \section{Computational methods for phononic media} \label{methods}
 \subsection{Plane-wave expansion method}
 According to \cite{cao04}, the plane-wave method is widely used because of its 
@@ -423,6 +563,14 @@ element in the system. Once the solution, at a single scattering element a
 system of equations can be solved for the rest of the scattered fields. The 
 dispersion relations are then found by application of Bloch's theorem. 
 
+%---------- ANALYSIS OF LATTICE STRUCTURES VIA REAL TIME EVOLUTION ------------%
+%  Real time evolution is sort of like a finite difference method right? But it 
+%  is not the finite difference scheme described above. You are going to have 
+%  frame this correctly so that the audience knows why this type of analysis 
+%  is useful. Really, how does looking at the real time evolution fit the 
+%  story you are trying to tell about dispersion relations and and this whole 
+%  thing with Bloch's theorem
+%------------------------------------------------------------------------------%
 \section{Analysis of lattice structures via real time evolution}
 
 \subsection{Monatomic lattice}
@@ -471,8 +619,13 @@ to the above.
 	\label{fig:diadr}
 \end{figure}
 
+%------ ANALYSIS OF 1D CONTINUUM MATERIALS VIA FINITE ELEMENT METHOD ----------%
+%  Here is where you connect with Bloch's theorem and what is a powerful method 
+%  of analysis that will be used in actual research. Emphasize the importance 
+%%%  of this and its utility.
+%------------------------------------------------------------------------------%
 \section{Analysis of 1D continuum materials via finite element method}
-\subsection{1D uniform bar}
+\subsection{Uniform bar}
 As a first exercise in using finite elements to find the dispersion properties 
 of materials, we will solve for the real time evolution of a waves in a bar and 
 find the dispersion relation in a similar manner as in the mass-spring system 
@@ -626,11 +779,52 @@ We are now in position to extract the dispersion properties of the uniform bar.
 The eigenvalue problem is solved several times for values of $k_x$, and we 
 obtain several corresponding values for $\omega$. 
 
+\subsection{Layered composite}
 
+%------ ANALYSIS OF 2D CONTINUUM MATERIALS VIA FINITE ELEMENT METHOD ----------%
+%  At this point you have already explained what finite elements is in 1D. You
+%  will need to reiterate the process but explain in detail the new equations 
+%  for 2D finite elements. Additionally, what new sorts of phenomena do we 
+%  expect to see here. What are the difficulties? What are the new
+%  consideration? What are the new results? etc.
+%------------------------------------------------------------------------------%
 \section{Analysis of 2D continuum materials via finite element method}
 
-\section{Conclusion}
+\subsection{Uniform material}
+
+\subsection{Laminate}
+
+\subsection{Material with inclusions}
+
+%------------------------------- FUTURE WORK  ---------------------------------%
+%  This one will be a little difficult. Assuming you have done your literature 
+%  review correctly, you should be in a position to speak about the direction 
+%  you will take. This is where you take ownership of this project. Be sure to 
+%  Connect with the methods of analysis you have been talking about here, but
+%  also to the beginning of this report where you have outlines the frontiers
+%  of research in phononic media.
+%------------------------------------------------------------------------------%
 \section{Future work}
+
+%-------------------------------- CONCLUSION  ---------------------------------%
+%  Recapitulate and make sure that the audience knows that you are in a 
+%  position to make contributions to the field. This part is important. Once 
+%  again frame it so they know what has been done in the field and what hasn't.
+%  The things you need to do what hasn't been done and how you have mastered 
+%  them.
+%------------------------------------------------------------------------------%
+\section{Conclusion}
+
+%------------- ADDITIONAL STUDIES OF HETEROGENEOUS MATERIALS  -----------------%
+%  Here quickly outline the chapters of the lecture notes that you studied and 
+%  some of the techniques that you have learned. Much like the proposal for 
+%  this independent study
+%------------------------------------------------------------------------------%
+\section{Additional studies of heterogeneous materials}
+In addition to this study of phononic media, much time and effort was put into 
+the notes of Prof. Ponte-Casta\~neda. Attached to this document, are solutions 
+to various problems in the lecture notes. 
+
 \section{Acknowledgements}
 I would like to thank my advisors Prof. Ponte-Casta\~neda and Prof. Reina for
 guidance this semester. Additionally, I would like to thank Chenchen Liu of

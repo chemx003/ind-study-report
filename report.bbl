@@ -1,5 +1,32 @@
 \begin{thebibliography}{1}
 
+\bibitem{pontenotes}
+Pedro~Ponte Casta{\~n}eda.
+\newblock Heterogeneous materials.
+\newblock Lecture Notes, Ecole Polytechnique, Department of Mechanics, ISBN 2 -
+  7302 - 1267 - 1.
+
+\bibitem{hussein10}
+Mahmoud Hussein and Michael Frazier.
+\newblock Band structure of phononic crystals with general damping.
+\newblock {\em Journal of Applied Physics}, 108, 2010.
+
+\bibitem{hussein14}
+Mahmoud~I. Hussein, Michael~J. Leamy, and Massimo Ruzzene.
+\newblock Dynamics of phononic materials and structures: Historical origins,
+  recent progress, and future outlook.
+\newblock {\em Applied Mechanics Reviews}, 66, 2014.
+
+\bibitem{hou12}
+M.~Badreddine Assouar, Matteo Senesi, Mourad Oudich, Massimo Ruzzene, and
+  Zhilin Hou.
+\newblock Broadband plate-type acoustic metamaterial for low-frequency sound
+  attenuation.
+\newblock {\em Appl. Phys. Lett.}, 101, 2012.
+
+\bibitem{zhang10}
+B.~Liang, X.~S. Guo, J.~Tu, D.~Zhang, and J.~C. Cheng.
+
 \bibitem{laude15}
 Vincent Laude.
 \newblock {\em Phononic Crystals : Artificial Crystals for Sonic, Acoustic, and
@@ -10,12 +37,6 @@ Vincent Laude.
 Wilhelm Magnus and Stanley Winkler.
 \newblock {\em Hill's Equation}.
 \newblock 1979.
-
-\bibitem{hussein14}
-Mahmoud~I. Hussein, Michael~J. Leamy, and Massimo Ruzzene.
-\newblock Dynamics of phononic materials and structures: Historical origins,
-  recent progress, and future outlook.
-\newblock {\em Applied Mechanics Reviews}, 66, 2014.
 
 \bibitem{cao04}
 Yongjun Cao, Zhilin Hou, and Youyan Liu.

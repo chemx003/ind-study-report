@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.1)  12 MAY 2018 00:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  12 MAY 2018 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,77 +252,81 @@ e
 \openout3 = `report.toc'.
 
 
-[2] <images/bandgaps.png, id=17, 1072.005pt x 414.79968pt>
-File: images/bandgaps.png Graphic file (type png)
-
-<use images/bandgaps.png>
-Package pdftex.def Info: images/bandgaps.png used on input line 61.
-(pdftex.def)             Requested size: 352.31625pt x 136.321pt.
- [1] [2 <./images/bandgaps.png>] [3] [4]
-<images/mass-spring.pdf, id=38, 588.1975pt x 75.28125pt>
+[2] [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 98.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
+ [2] [3]
+[4] <images/mass-spring.pdf, id=36, 588.1975pt x 75.28125pt>
 File: images/mass-spring.pdf Graphic file (type pdf)
 
 <use images/mass-spring.pdf>
-Package pdftex.def Info: images/mass-spring.pdf used on input line 241.
+Package pdftex.def Info: images/mass-spring.pdf used on input line 364.
 (pdftex.def)             Requested size: 352.31625pt x 45.09212pt.
- [5 <./images/mass-spring.pdf>]
-<images/dispersion-rln.pdf, id=55, 497.86pt x 316.18124pt>
+ [5]
+<images/dispersion-rln.pdf, id=41, 497.86pt x 316.18124pt>
 File: images/dispersion-rln.pdf Graphic file (type pdf)
 
 <use images/dispersion-rln.pdf>
-Package pdftex.def Info: images/dispersion-rln.pdf used on input line 295.
+Package pdftex.def Info: images/dispersion-rln.pdf used on input line 418.
 (pdftex.def)             Requested size: 352.31625pt x 223.75209pt.
-
-<images/diatomic-mass-spring.pdf, id=56, 588.1975pt x 75.28125pt>
+ [6 <./images/mass-spring.pdf>]
+<images/diatomic-mass-spring.pdf, id=59, 588.1975pt x 75.28125pt>
 File: images/diatomic-mass-spring.pdf Graphic file (type pdf)
 
 <use images/diatomic-mass-spring.pdf>
-Package pdftex.def Info: images/diatomic-mass-spring.pdf used on input line 318
+Package pdftex.def Info: images/diatomic-mass-spring.pdf used on input line 441
 .
 (pdftex.def)             Requested size: 352.31625pt x 45.09212pt.
- [6 <./images/dispersion-rln.pdf>]
-[7 <./images/diatomic-mass-spring.pdf>]
-<images/matlab-dr.pdf, id=88, 642.4pt x 477.785pt>
-File: images/matlab-dr.pdf Graphic file (type pdf)
- <use images/matlab-dr.pdf>
-Package pdftex.def Info: images/matlab-dr.pdf used on input line 440.
-(pdftex.def)             Requested size: 352.31625pt x 262.03894pt.
+ [7 <./images/dispersion-rln.pdf> <./images/diatomic-mass-spring.pdf
 
-[8] <images/snap-f19.pdf, id=92, 655.44875pt x 392.46625pt>
+pdfTeX warning: /usr/bin/pdflatex (file ./images/diatomic-mass-spring.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>] [8] <images/matlab-dr.pdf, id=89, 642.4pt x 477.785pt>
+File: images/matlab-dr.pdf Graphic file (type pdf)
+
+<use images/matlab-dr.pdf>
+Package pdftex.def Info: images/matlab-dr.pdf used on input line 588.
+(pdftex.def)             Requested size: 352.31625pt x 262.03894pt.
+ [9]
+<images/snap-f19.pdf, id=93, 655.44875pt x 392.46625pt>
 File: images/snap-f19.pdf Graphic file (type pdf)
 
 <use images/snap-f19.pdf>
-Package pdftex.def Info: images/snap-f19.pdf used on input line 453.
+Package pdftex.def Info: images/snap-f19.pdf used on input line 601.
 (pdftex.def)             Requested size: 352.31625pt x 210.95847pt.
 
-<images/snap-f21.pdf, id=93, 705.63625pt x 418.56375pt>
+<images/snap-f21.pdf, id=94, 705.63625pt x 418.56375pt>
 File: images/snap-f21.pdf Graphic file (type pdf)
 
 <use images/snap-f21.pdf>
-Package pdftex.def Info: images/snap-f21.pdf used on input line 459.
+Package pdftex.def Info: images/snap-f21.pdf used on input line 607.
 (pdftex.def)             Requested size: 352.31625pt x 208.98117pt.
 
-<images/diatomic-dr.pdf, id=94, 621.32124pt x 484.81125pt>
+<images/diatomic-dr.pdf, id=95, 621.32124pt x 484.81125pt>
 File: images/diatomic-dr.pdf Graphic file (type pdf)
 
 <use images/diatomic-dr.pdf>
-Package pdftex.def Info: images/diatomic-dr.pdf used on input line 469.
+Package pdftex.def Info: images/diatomic-dr.pdf used on input line 617.
 (pdftex.def)             Requested size: 352.31625pt x 274.91014pt.
- [9 <./images/matlab-dr.pdf>] [10 <./images/snap-f19.pdf> <./images/snap-f21.pd
-f
+ [10 <./images/matlab-dr.pdf>] [11 <./images/snap-f19.pdf> <./images/snap-f21.p
+df
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/snap-f21.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] [11 <./images/diatomic-dr.pdf>] [12] [13] [14] (./report.bbl) [15]
+>] [12 <./images/diatomic-dr.pdf>] [13] [14] [15] (./report.bbl) [16]
 (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2651 strings out of 493029
- 36365 string characters out of 6136235
- 109943 words of memory out of 5000000
- 6151 multiletter control sequences out of 15000+600000
+ 2665 strings out of 493029
+ 36575 string characters out of 6136234
+ 109953 words of memory out of 5000000
+ 6164 multiletter control sequences out of 15000+600000
  9988 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,32p,271b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,32p,238b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></u
@@ -337,10 +341,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (18 pages, 579992 bytes).
+Output written on report.pdf (19 pages, 509349 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 204 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

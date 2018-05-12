@@ -3,47 +3,55 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: unsrt.bst
 Database file #1: mybib.bib
+I was expecting a `,' or a `}'---line 91 of file mybib.bib
+ :  
+ :  title = "An acoustic rectifier"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty title in zhang10
+Warning--empty journal in zhang10
+Warning--empty year in zhang10
 Warning--empty publisher in laude15
 Warning--empty publisher in magnus79
-You've used 4 entries,
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            466 strings with 4030 characters,
-and the built_in function-call counts, 757 in all, are:
-= -- 59
-> -- 34
+            484 strings with 4573 characters,
+and the built_in function-call counts, 1369 in all, are:
+= -- 101
+> -- 80
 < -- 0
-+ -- 13
-- -- 9
-* -- 46
-:= -- 128
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 2
++ -- 30
+- -- 22
+* -- 83
+:= -- 245
+add.period$ -- 22
+call.type$ -- 8
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 37
-empty$ -- 79
-format.name$ -- 9
-if$ -- 166
+cite$ -- 13
+duplicate$ -- 65
+empty$ -- 129
+format.name$ -- 22
+if$ -- 290
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 6
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 18
+int.to.str$ -- 8
+missing$ -- 9
+newline$ -- 41
+num.names$ -- 8
+pop$ -- 28
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 12
+skip$ -- 25
 stack$ -- 0
 substring$ -- 27
-swap$ -- 4
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 5
-width$ -- 5
-write$ -- 42
-(There were 2 warnings)
+warning$ -- 5
+while$ -- 9
+width$ -- 9
+write$ -- 78
+(There was 1 error message)
