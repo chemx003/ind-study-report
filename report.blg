@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: unsrt.bst
+Database file #1: mybib.bib
+Warning--empty publisher in laude15
+Warning--empty publisher in magnus79
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            466 strings with 4030 characters,
+and the built_in function-call counts, 757 in all, are:
+= -- 59
+> -- 34
+< -- 0
++ -- 13
+- -- 9
+* -- 46
+:= -- 128
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 37
+empty$ -- 79
+format.name$ -- 9
+if$ -- 166
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 23
+num.names$ -- 4
+pop$ -- 18
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 27
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 5
+width$ -- 5
+write$ -- 42
+(There were 2 warnings)
