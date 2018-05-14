@@ -539,7 +539,7 @@ letting $\Omega=\frac{\omega}{\omega_0}$ and $\mu=kl$. Then,
 The positive part is plotted in Figure \ref{fig:dr}.
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{dispersion-rln.pdf}
+	\includegraphics[width=0.6\textwidth]{dispersion-rln.pdf}
 	\caption{The non-dimensional dispersion relation for the mass spring system}
 	\label{fig:dr}
 \end{figure}
@@ -621,7 +621,7 @@ Finally, we can write
 -\omega^2 \mathbf{M} \right] \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
 \end{equation}
 \begin{equation}
-\left[\mathbf{\Bar{K}}(\mu) -\omega^2 \mathbf{M} \right] 
+\left[\mathbf{\tilde{K}}(\mu) -\omega^2 \mathbf{M} \right] 
 \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
 \end{equation}
 Calculating the determinant of the matrix on the left we get the relation
@@ -639,7 +639,7 @@ region. Additionally, there is still a stop band, but in this case the cutoff
 frequency is lower -about $\Omega = 1.75$.
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{diatomic-exact.pdf}
+	\includegraphics[width=0.6\textwidth]{diatomic-exact.pdf}
 	\caption{Dispersion relation for the diatomic lattice system with 
 	$m_1=1$, $m_2=2$, and $k=1$.}
 	\label{fig:dia-exact}
@@ -731,12 +731,13 @@ system inside and outside of the band gaps and stop bands. Additionally, the
 to find the dispersion relations in each case. 
 
 \subsection{Monatomic lattice}
-The monatomic lattice is modeled using the equations of motion (\ref{eqnms}) 
-and the Verlet integration method. The Verlet integration method is involves a 
-central difference approximation for the time derivative in Newton's equations. 
-See Appendix \ref{verlet} for more details on the Verlet integration method. 
-One end of the system is subject to a harmonic excitation with a prescribed 
-frequency, and the other end is allowed to freely move.
+The monatomic lattice with 100 masses is modeled using the equations of motion 
+(\ref{eqnms}) and the Verlet integration method. The Verlet integration method 
+is involves a central difference approximation for the time derivative in 
+Newton's equations. See Appendix \ref{verlet} for more details on the Verlet 
+integration method. One end of the system is subject to a harmonic excitation 
+with a prescribed frequency, and the other end is allowed to freely move. For 
+the material parameter, we choose $m=1$ and $k=1$.
 
 In order to compute the dispersion relation of the system, a range of 
 frequencies is prescribed from $\Omega=0$ to $\Omega=2$. At each frequency and 
@@ -748,11 +749,14 @@ the spectrum is taken as the wavenumber for the corresponding excitation
 frequency. The result is Figure \ref{fig:matlab-dr}.
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{matlab-dr.pdf}
+	\includegraphics[width=0.6\textwidth]{matlab-dr.pdf}
 	\caption{Using a Fourier transform in space, wave lengths for different 
 	excitation frequencies are identified and plotted}
 	\label{fig:matlab-dr}
 \end{figure}
+The results are a little noisy which can be attributed to relflections at the 
+boundaries of the system. If the chain of masses was longer, this would not be 
+a problem. 
 
 Increasing the frequency of the harmonic excitation above the cutoff frequency 
 of the system it is easy to explore the attenuation effect at the stop band as 
@@ -762,13 +766,13 @@ $\Omega=2$. There is an obvious drop in amplitude inside and outside of the
 stop band.
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{snap-f19.pdf}
+	\includegraphics[width=0.6\textwidth]{snap-f19.pdf}
 	\caption{Snapshot of mass spring system with $\Omega=1.9$}
 	\label{fig:snap19}
 \end{figure}
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{snap-f21.pdf}
+	\includegraphics[width=0.6\textwidth]{snap-f21.pdf}
 	\caption{Snapshot of mass spring system with $\Omega=2.1$}
 	\label{fig:snap21}
 \end{figure}
@@ -779,16 +783,58 @@ frequencies. This is done by fitting a complex exponential to the evanescent
 waves and finding the power of the exponential term. Figure  has the results of 
 the fitting process overlaid on top of the exact plot of the evanescent 
 wavenumbers. 
-
-\subsection{Diatomic lattice}
-Here the results for a diatomic lattice are presented from a similar simulation 
-to the above.
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.75\textwidth]{diatomic-dr.pdf}
-	\caption{Dispersion relation for the diatomic lattice}
+	\includegraphics[width=0.6\textwidth]{im-wavenum-res.pdf}
+	\caption{Here, the results of the exponential fitting process of the 
+	evanescent waves are plotted.}
+	\label{fig:imagwavenumres}
+\end{figure}
+Closer to the cutoff frequency, the results are not in good agreement. This is 
+due to the reflections of the wave at the boundary of the system. 
+
+Another way to identify band gaps in a system without calculating the Fourier 
+transform is by comparing the displacement at the excited end of the system to 
+the displacements at the free end. Sweeping over frequencies and plotting the 
+ratio of displacements at each end results in a transmission loss diagram as in 
+Figure \ref{fig:tlms}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{tl-diag.pdf}
+	\caption{The displacement of the excited mass and the free mass are 
+	compared to construct this transmission-loss diagram.}
+	\label{fig:tlms}
+\end{figure}
+It is apparent from Figure \ref{fig:tlms} that there is a cutoff frequency at 
+$\Omega=2$. This may be inferred even before seeing the dispersion relation of 
+the monatomic lattice beforehand.
+
+\subsection{Diatomic lattice}
+We also perform a finite difference time domain analysis for the diatomic 
+lattice with $m_1=1$, $m_2=2$, and $k=1$. The results from taken the Fourier 
+transform of the data and also the previously derived analytical expressions 
+are plotted in Figure \ref{fig:diadr}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{diatomic-dr.pdf}
+	\caption{The results for the finite difference time domain method are 
+	plotted along side the exact dispersion relation derived using the inverse 
+	method.}
 	\label{fig:diadr}
 \end{figure}
+From the real time evolution we are able to recover the band gap and the stop 
+band between the two modes of vibration. Additionally, the transmission-loss 
+diagram is also plotted in Figure \ref{fig:tlds} to illustrate the attenuation 
+that the system undergoes.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{dia-tl-diag.pdf}
+	\caption{The displacement of the excited mass and the free mass in the 
+	diatomic lattice are compared to construct this transmission-loss diagram.}
+	\label{fig:tlds}
+\end{figure}
+It does appear that there is attenuation in the band gap and above the stop 
+band. 
 
 %------ ANALYSIS OF 1D CONTINUUM MATERIALS VIA FINITE ELEMENT METHOD ----------%
 %  Here is where you connect with Bloch's theorem and what is a powerful method 
@@ -798,10 +844,8 @@ to the above.
 \section{Analysis of 1D continuum materials via finite element method}
 \subsection{Uniform bar}
 As a first exercise in using finite elements to find the dispersion properties 
-of materials, we will solve for the real time evolution of a waves in a bar and 
-find the dispersion relation in a similar manner as in the mass-spring system 
-(using the Fourier transform in space). For the one dimensional problem, the 
-elasticity equations we want to solve are.
+of materials, we will consider a uniform bar in one dimension. For the one 
+dimensional problem, the elasticity equations we want to solve are.
 \begin{align}
 \frac{\partial \sigma_x}{\partial x} + b_i &= \rho \frac{\partial^2 
 u_x}{\partial t^2},\quad x\in[0,L]\quad\textnormal{(Equilibrium)} \\
@@ -811,20 +855,6 @@ x}\quad\textnormal{(Strain-displacement)}\\
 u_x(x=0,t) &= A_0sin(\omega t) \\
 \sigma_x(x=L,t) &= 0
 \end{align}
-Note that the finite element solution with $n$ nodes is analogous to the mass 
-spring system with $n$ masses. Here, we can relate the material properties via 
-$\rho = \frac{M}{AL}$ and $E = \frac{kL}{A}$. Thus, for a system of n masses, 
-the analogous system in finite elements has material properties
-\begin{equation}
-\rho = \frac{n}{d(n-1)}
-\end{equation}
-and
-\begin{equation}
-E = \frac{k_{eff}\times d(n-1)}{1}= (1/k +\cdots)^{-1} \times d(n-1)= 
-\frac{d(n-1)}{n}
-\end{equation}
-where $L=d(n-1)$ and we require that the nodes have the spacing with respect to 
-each other as the springs to with each other.
 
 In the absence of body forces, we can find the weak form of the equilibrium 
 equation by multiplying by a test function $\varphi$ and integrating of the 
@@ -869,9 +899,9 @@ Ka+M\ddot{a} = 0
 \end{equation}
 where $K$ is called the stiffness matrix, and $M$ is called the mass matrix. 
 
-We now assume a solution of the form
+We now assume a harmonic solution of the form
 \begin{equation}
-a = ae^{i(kx-\omega t)}
+a = \tilde{a}e^{i \omega t}
 \end{equation}
 such that the second order differential equation (\ref{matrixform}) becomes a 
 complex eigenvalue problem:
@@ -883,7 +913,9 @@ solving the eigenvalue problem as is does not yield any information about the
 dispersion properties of the system. To obtain this dependence the Bloch 
 condition must be enforced. 
 
-The Bloch condition is similar to the periodic boundary condition
+The Bloch condition is similar to the periodic boundary condition and is a 
+manifestation of Bloch's theorem much like the Bloch wave solution that was 
+asserted when analytically solving for the dispersion relation
 \begin{equation}
 a(x+h) = a(x)\quad\textnormal{(Periodic boundary condition)}
 \end{equation}
@@ -934,23 +966,57 @@ Our eigenvalue problem is now
 (K-\omega^2M)T\hat{a} = 0
 \end{equation}
 To make it so our matrix is square, and therefore invertible, we premultiply 
-the equation by $T^T$
+the equation by $\bar{T}^T$
 \begin{equation} \label{evalprob}
 (\hat{K} - \omega^2 \hat{M})\hat{a} = 0
 \end{equation}
 where
 \begin{equation}
-\hat{K}(k_x) = T^T K T
+\hat{K}(k_x) = \bar{T}^T K T
 \end{equation}
 and 
 \begin{equation}
-\hat{M}(k_x) = T^T M T
+\hat{M}(k_x) = \bar{T}^T M T
 \end{equation}
 We are now in position to extract the dispersion properties of the uniform bar. 
 The eigenvalue problem is solved several times for values of $k_x$, and we 
-obtain several corresponding values for $\omega$. 
+obtain several corresponding values for $\omega$. The dispersion relation for 
+the uniform bar is plotted in Figure \ref{fig:unifbar}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{unifbar.pdf}
+	\caption{Dispersion relation for a uniform bar with $E=1$ and $\rho=1$.}
+	\label{fig:unifbar}
+\end{figure}
+The dispersion relation has only has straight lines indicating there is no 
+dispersion which is what we expect for a uniform material. No band gaps form 
+because there are no periodic inclusions to produce Bragg scattering. There are 
+several modes corresponding to forward and backward propagating waves and it is 
+verified that the wave speed is equal to one since when $k=\pm \omega$ for all 
+wavenumbers.
 
 \subsection{Layered composite}
+For the layered composite, a bimaterial unit cell is consider as shown in 
+Figure \ref{fig:layrdcell} with a stiffer and denser material in the center 
+with length equal to that of a half the length of the unit cell. 
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{layrd-unit-cell.pdf}
+	\caption{Unit cell of the layered composite with each phase occupying an 
+	equal volume fraction.}
+	\label{fig:layrdcell}
+\end{figure}
+The same finite element analysis as performed on this layered composite 
+resulting in the dispersion relation shown in Figure \ref{fig:layrd}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{layrd.pdf}
+	\caption{Dispersion relation from the finite element analysis of a unit 
+	cell of the layered composite}
+	\label{fig:layrd}
+\end{figure}
+Due to the periodicity of the material, we see the formation of band gaps and 
+the presence of dispersion. 
 
 %------ ANALYSIS OF 2D CONTINUUM MATERIALS VIA FINITE ELEMENT METHOD ----------%
 %  At this point you have already explained what finite elements is in 1D. You
@@ -960,6 +1026,53 @@ obtain several corresponding values for $\omega$.
 %  consideration? What are the new results? etc.
 %------------------------------------------------------------------------------%
 \section{Analysis of 2D continuum materials via finite element method}
+Extending finite elements to 2D, we find that after considering the principle 
+of virtual work and approximating our solution using linear shape functions 
+that 
+\begin{equation}
+\left[\int_{\Omega} (BN)^T C BN dV\right]a 
+- \left[ \int_{\Omega} N^T \rho N dV \right]\ddot{a} = 0
+\end{equation}
+where
+\begin{equation}
+	N = 	
+	\begin{bmatrix}
+	N_1 & 0 & N_2 & 0 & ... & N_n & 0 \\
+	0 & N_1 & 0 & N_2 & ... & 0 & N_n
+	\end{bmatrix}
+\end{equation}
+and 
+\begin{equation}
+	B =
+	\begin{bmatrix}
+		\frac{\partial }{\partial x} & 0 \\
+		0 & \frac{\partial }{\partial y} \\
+		\frac{\partial }{\partial y} & \frac{\partial }{\partial x}
+	\end{bmatrix}
+\end{equation}
+For our constitutive relation we consider an isotropic material with
+\begin{equation}
+	\sigma_{ij} = 2\mu\varepsilon_{ij} + \lambda\varepsilon_{kk}\delta_{ij}
+\end{equation}
+such that
+\begin{equation}
+	C = 
+	\begin{bmatrix}
+	2\mu+\lambda & \lambda & 0 \\
+	\lambda & 2\mu + \lambda & 0 \\
+	0 & 0 & 2\mu 
+	\end{bmatrix}
+\end{equation}
+Note that this corresponds to a 2D material and not a 3D material in plane 
+strain or plane stress.
+
+We can write our matrix form in the same form as in the 1D case and also assume 
+a harmonic solution.
+\begin{equation}
+Ka - M\ddot{a} = \left(K - \omega^2 M\right)a = 0
+\end{equation}
+Furthermore, we will apply the Bloch condition again. The linear transformation 
+matrix is a little more complicated due to the added dimension. 
 
 \subsection{Uniform material}
 

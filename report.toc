@@ -17,18 +17,18 @@
 \contentsline {section}{\numberline {4}Computational methods for phononic media}{11}
 \contentsline {section}{\numberline {5}Analysis of lattice structures via real time evolution}{12}
 \contentsline {subsection}{\numberline {5.1}Monatomic lattice}{12}
-\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{13}
-\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{15}
-\contentsline {subsection}{\numberline {6.1}Uniform bar}{15}
+\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{15}
+\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{16}
+\contentsline {subsection}{\numberline {6.1}Uniform bar}{16}
 \contentsline {subsection}{\numberline {6.2}Layered composite}{18}
-\contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{18}
-\contentsline {subsection}{\numberline {7.1}Uniform material}{18}
-\contentsline {subsection}{\numberline {7.2}Laminate}{18}
-\contentsline {subsection}{\numberline {7.3}Material with inclusions}{18}
-\contentsline {section}{\numberline {8}Future work}{18}
-\contentsline {section}{\numberline {9}Conclusion}{18}
-\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{18}
-\contentsline {section}{\numberline {11}Acknowledgements}{18}
-\contentsline {section}{\numberline {A}Appendix}{18}
-\contentsline {subsection}{\numberline {A.1}Verlet integration}{18}
-\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{18}
+\contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{20}
+\contentsline {subsection}{\numberline {7.1}Uniform material}{21}
+\contentsline {subsection}{\numberline {7.2}Laminate}{21}
+\contentsline {subsection}{\numberline {7.3}Material with inclusions}{21}
+\contentsline {section}{\numberline {8}Future work}{21}
+\contentsline {section}{\numberline {9}Conclusion}{21}
+\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{21}
+\contentsline {section}{\numberline {11}Acknowledgements}{21}
+\contentsline {section}{\numberline {A}Appendix}{21}
+\contentsline {subsection}{\numberline {A.1}Verlet integration}{21}
+\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{21}
