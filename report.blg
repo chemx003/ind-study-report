@@ -4,46 +4,47 @@ The top-level auxiliary file: report.aux
 The style file: unsrt.bst
 Database file #1: mybib.bib
 Warning--empty publisher in laude15
+Warning--empty journal in frazier15
 Warning--empty publisher in magnus79
-You've used 9 entries,
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            492 strings with 4778 characters,
-and the built_in function-call counts, 1547 in all, are:
-= -- 120
-> -- 91
+            555 strings with 6430 characters,
+and the built_in function-call counts, 3433 in all, are:
+= -- 272
+> -- 199
 < -- 0
-+ -- 34
-- -- 25
-* -- 87
-:= -- 282
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 7
++ -- 74
+- -- 55
+* -- 211
+:= -- 619
+add.period$ -- 58
+call.type$ -- 19
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 73
-empty$ -- 143
-format.name$ -- 25
-if$ -- 331
+cite$ -- 22
+duplicate$ -- 156
+empty$ -- 315
+format.name$ -- 55
+if$ -- 735
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 10
-newline$ -- 48
-num.names$ -- 9
-pop$ -- 23
+int.to.str$ -- 19
+missing$ -- 20
+newline$ -- 99
+num.names$ -- 19
+pop$ -- 36
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 70
 stack$ -- 0
-substring$ -- 27
-swap$ -- 8
+substring$ -- 93
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 10
-width$ -- 10
-write$ -- 95
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 23
+width$ -- 21
+write$ -- 205
+(There were 3 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{pontenotes}
 Pedro~Ponte Casta{\~n}eda.
@@ -29,11 +29,70 @@ B.~Liang, X.~S. Guo, J.~Tu, D.~Zhang, and J.~C. Cheng.
 \newblock An acoustic rectifier.
 \newblock {\em Nature Materials}, 9, 2010.
 
+\bibitem{sukhovich09}
+A.~Sukhovich, B.~Merheb, K.~Muralidharan, J.~O. Vasseur, Y.~Pennec, P.~A.
+  Deymier, and J.~H. Page.
+\newblock Experimental and theoretical evidence for subwavelength imaging in
+  phononic crystals.
+\newblock {\em Phys. Rev. Lett.}, 102:154301, Apr 2009.
+
+\bibitem{norris11}
+Andrew~N. Norris.
+\newblock Introduction to the special issue on cloaking of wave motion.
+\newblock {\em Wave Motion}, 48(6):453 -- 454, 2011.
+\newblock Special Issue on Cloaking of Wave Motion.
+
 \bibitem{laude15}
 Vincent Laude.
 \newblock {\em Phononic Crystals : Artificial Crystals for Sonic, Acoustic, and
   Elastic Waves}.
 \newblock 2015.
+
+\bibitem{sigalas92}
+M.~M. Sigalas and E.~N. Economou.
+\newblock Elastic and acoustic wave band structure.
+\newblock {\em Journal of Sound and Vibration}, 158, 1992.
+
+\bibitem{sigalas93}
+E.~N. Economou and M.~M. Sigalas.
+\newblock Classical wave propagation in periodic structures: Cermet versus
+  network topology.
+\newblock {\em Phys. Rev. B}, 48, 1993.
+
+\bibitem{liu00}
+Zhengyou Liu, Xixiang Zhang, Yiwei Mao, Y.~Y. Zhu, Zhiyu Yang, C.~T. Chan, and
+  Ping Sheng.
+\newblock Locally resonant sonic materials.
+\newblock {\em Science}, 289(5485), 2000.
+
+\bibitem{frazier15}
+Michael~Joseph Frazier.
+\newblock {Dissipative Wave Propagation in Phononic Crystals and Metamaterials:
+  Models and Analysis}.
+\newblock 2015.
+
+\bibitem{frazier16}
+Michael~J. Frazier and Dennis~M. Kochmann.
+\newblock {Band gap transmission in periodic bistable mechanical systems}.
+\newblock {\em Journal of Sounds and Vibration}, 388, 2016.
+
+\bibitem{zuodon04}
+Y.~Zuo-Don and C.~Jian-Chun.
+\newblock Elastic wave propagation in two-dimensional ordered and weakly
+  disordered phononic crystals.
+\newblock {\em Chinese Physics Letters}, 22, 2004.
+
+\bibitem{chen07}
+A.-Li Chen and Yue-Sheng Wang.
+\newblock Study on band gaps of elastic waves propagating in one-dimensional
+  disordered phononic crystals.
+\newblock {\em Physica B: Condensed Matter}, 392(1), 2007.
+
+\bibitem{wang10}
+A-Li Chen, Yue-Sheng Wang, Jian-Bao Li, and Chuanzeng Zhang.
+\newblock Localisation of elastic waves in two-dimensional randomly disordered
+  solid phononic crystals.
+\newblock {\em Waves in Random and Complex Media}, 20(1):104--121, 2010.
 
 \bibitem{magnus79}
 Wilhelm Magnus and Stanley Winkler.
@@ -48,8 +107,8 @@ Yongjun Cao, Zhilin Hou, and Youyan Liu.
 
 \bibitem{veres13}
 Istvan~A Veres, Thomas Berer, and Osamu Matsuda.
-\newblock {Complex band structures of two dimensional phononic crystals:
-  Analysis by the finite element method}.
+\newblock Complex band structures of two dimensional phononic crystals:
+  Analysis by the finite element method.
 \newblock {\em Journal of Applied Physics}, 114, 2013.
 
 \end{thebibliography}
