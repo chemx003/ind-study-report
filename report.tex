@@ -672,10 +672,71 @@ frequency is lower -about $\Omega = 1.75$.
 The transfer matrix method enforces continuity between layers of a system. At 
 the interface between two unit cells the displacements must be equal and the 
 forces or tractions must be as well. First, a relationship between these 
-variables must be derived from one end of the unit cell to the other end. This 
-results in the formulation of a so called transfer matrix. This type of 
-analysis is completed by of course applying Bloch's theorem to relate the 
-displacements and forces in one cell to another.
+variables must be derived from one end of the unit cell to the other end. The 
+relationship can be written in a matrix called the  transfer matrix. This type 
+of analysis is completed by applying Bloch's theorem to relate the 
+displacements and forces in one cell to another. Here we outline the anlaysis 
+of Shmuel \cite{shmuel16}
+
+Consider a two phase laminate, with layer thicknesses $h^{(p)}$ and lamination 
+direction $n$. A plane wave in layer $i$ that is propagating in the direction 
+of $n$ has the general form
+\begin{equation}
+	u^{(p)} = m^{(p)}e^{ik^{(p)}(n\cdot x - c^{(p)} t)}
+\end{equation}
+where $m^{(p)}$ is the polarization and $c^{(p)}$ is the wave speed. From the 
+above and the constitutive equations for linear elasticity, a relationship for 
+the displacements at each end of a single layer can be written
+\begin{equation} \label{transfeqn}
+	\begin{bmatrix}
+		u^{(p)}(x+h^{(p)}n,t) \\
+		t^{(p)}(x+h^{(p)}n,t)
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		\cos{ k^{(p)} h^{(p)} } && \frac{\sin{ k^{(p)} h^{(p)} 
+		}}{\tilde{\mu}^{(p)}k^{(p)}} \\
+		- \tilde{\mu}^{(p)}k^{(p)} \sin{ k^{(p)} h^{(p)} } &&
+		\cos{ k^{(p)} h^{(p)}}
+	\end{bmatrix}
+	\begin{bmatrix}
+		u^{(p)}(x,t) \\
+		t^{(p)}(x,t)
+	\end{bmatrix}
+\end{equation}
+$\tilde{\mu}$ is a combination of Lam\'e constants which is different for 
+transverse and longitudinal waves. The matrix $T^{(p)}$ is the transfer matrix 
+for one layer.
+
+In order to relate, the displacements at the opposite ends of the unit cell of 
+this two phase laminate we need two transfer matrices.
+\begin{equation} \label{transfeqn}
+	\begin{bmatrix}
+		u^{(1)}(x+h^{(1)}n+h^{(2)}n,t) \\
+		t^{(1)}(x+h^{(1)}n+h^{(2)}n,t)
+	\end{bmatrix}
+	=
+	T^{(2)}T^{(1)}
+	\begin{bmatrix}
+		u^{(1)}(x,t) \\
+		t^{(1)}(x,t)
+	\end{bmatrix}
+\end{equation}
+At this point, we use Bloch's theorem to enforce that the displacements at the 
+boundary of the unit cell must be equal up to a phase constant. The end result 
+is an equation of the form
+\begin{equation}
+	\left(T^{(2)}T^{(1)} - \lambda I\right)
+	\begin{bmatrix}
+		u^{(1)}(x,t) \\
+		t^{(1)}(x,t)
+	\end{bmatrix} = 0
+\end{equation}
+where $\lambda = e^{ik_bh}$ (h is the width of the unit cell) and $k_b$ is the 
+Bloch wavenumber. The determinant of the matrix must be equal to zero which 
+generates a dispersion relation. Given a frequency $\omega$ , the dispersion 
+relation gives a set of corresponding $k_b$ (where
+$\omega=c^{(p)}k^{(p)}$ in the above equations).
 
 %----------------- COMPUTATIONAL METHODS FOR PHONONIC MEDIA -------------------%
 %  We jut got done talking a lot about dispersion relations. To make this jump

@@ -14,13 +14,13 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Monatomic lattice}{7}
 \contentsline {subsubsection}{\numberline {3.2.3}Diatomic lattice}{9}
 \contentsline {subsubsection}{\numberline {3.2.4}Laminate}{11}
-\contentsline {section}{\numberline {4}Computational methods for phononic media}{11}
-\contentsline {section}{\numberline {5}Analysis of lattice structures via real time evolution}{12}
+\contentsline {section}{\numberline {4}Computational methods for phononic media}{12}
+\contentsline {section}{\numberline {5}Analysis of lattice structures via real time evolution}{13}
 \contentsline {subsection}{\numberline {5.1}Monatomic lattice}{13}
-\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{15}
-\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{17}
-\contentsline {subsection}{\numberline {6.1}Uniform bar}{17}
-\contentsline {subsection}{\numberline {6.2}Layered composite}{19}
+\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{16}
+\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{16}
+\contentsline {subsection}{\numberline {6.1}Uniform bar}{16}
+\contentsline {subsection}{\numberline {6.2}Layered composite}{20}
 \contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{21}
 \contentsline {subsection}{\numberline {7.1}Uniform material}{23}
 \contentsline {subsection}{\numberline {7.2}Laminate}{23}

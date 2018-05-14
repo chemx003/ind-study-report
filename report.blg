@@ -6,45 +6,45 @@ Database file #1: mybib.bib
 Warning--empty publisher in laude15
 Warning--empty journal in frazier15
 Warning--empty publisher in magnus79
-You've used 19 entries,
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            555 strings with 6430 characters,
-and the built_in function-call counts, 3433 in all, are:
-= -- 272
-> -- 199
+            560 strings with 6560 characters,
+and the built_in function-call counts, 3584 in all, are:
+= -- 285
+> -- 207
 < -- 0
-+ -- 74
-- -- 55
-* -- 211
-:= -- 619
-add.period$ -- 58
-call.type$ -- 19
-change.case$ -- 17
++ -- 77
+- -- 57
+* -- 217
+:= -- 647
+add.period$ -- 61
+call.type$ -- 20
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 156
-empty$ -- 315
-format.name$ -- 55
-if$ -- 735
+cite$ -- 23
+duplicate$ -- 164
+empty$ -- 329
+format.name$ -- 57
+if$ -- 768
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 20
-newline$ -- 99
-num.names$ -- 19
-pop$ -- 36
+int.to.str$ -- 20
+missing$ -- 21
+newline$ -- 104
+num.names$ -- 20
+pop$ -- 37
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 70
+skip$ -- 75
 stack$ -- 0
 substring$ -- 93
-swap$ -- 17
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 23
-width$ -- 21
-write$ -- 205
+while$ -- 24
+width$ -- 22
+write$ -- 216
 (There were 3 warnings)
