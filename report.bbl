@@ -26,6 +26,8 @@ M.~Badreddine Assouar, Matteo Senesi, Mourad Oudich, Massimo Ruzzene, and
 
 \bibitem{zhang10}
 B.~Liang, X.~S. Guo, J.~Tu, D.~Zhang, and J.~C. Cheng.
+\newblock An acoustic rectifier.
+\newblock {\em Nature Materials}, 9, 2010.
 
 \bibitem{laude15}
 Vincent Laude.
@@ -43,5 +45,11 @@ Yongjun Cao, Zhilin Hou, and Youyan Liu.
 \newblock Convergence problem of plane-wave expansion method for phononic
   crystals.
 \newblock {\em Physics Letters A}, 327(2):247 -- 253, 2004.
+
+\bibitem{veres13}
+Istvan~A Veres, Thomas Berer, and Osamu Matsuda.
+\newblock {Complex band structures of two dimensional phononic crystals:
+  Analysis by the finite element method}.
+\newblock {\em Journal of Applied Physics}, 114, 2013.
 
 \end{thebibliography}

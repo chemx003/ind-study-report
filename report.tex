@@ -1068,17 +1068,124 @@ strain or plane stress.
 
 We can write our matrix form in the same form as in the 1D case and also assume 
 a harmonic solution.
-\begin{equation}
+\begin{equation} \label{twodfem}
 Ka - M\ddot{a} = \left(K - \omega^2 M\right)a = 0
 \end{equation}
 Furthermore, we will apply the Bloch condition again. The linear transformation 
-matrix is a little more complicated due to the added dimension. 
+matrix is more complicated due to the added dimension. In order to impose the 
+Bloch condition in 2D, the degrees of freedom of the unit cell must be divided 
+into interior nodes and boundary nodes according to Figure 
+\ref{fig:twodunitcell}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.55\textwidth]{twodunitcell.pdf}
+	\caption{The degrees of freedom are partitioned into nodes at the left-top 
+	(LT), right-top (RT), left-bottom (LB), right-bottom (RB) corners. 
+	Non-corner nodes are further divided into right (R), left (L), top (T), 
+	bottom (B) sides and also interior (int)}
+	\label{fig:twodunitcell}
+\end{figure}
+Based on the aforementioned partitioning scheme, the degrees of freedom are 
+reduced according to the following
+\begin{equation}
+a =
+\begin{bmatrix}
+a_{B} \\
+a_{L} \\
+a_{LB} \\
+a_{int} \\
+a_{T} \\
+a_{R} \\
+a_{RB} \\
+a_{LT} \\
+a_{RT} 
+\end{bmatrix}
+= 
+\begin{bmatrix}
+\mathbf{I} && \mathbf{0} && \mathbf{0} && \mathbf{0}\\
+\mathbf{0} && \mathbf{I} && \mathbf{0} && \mathbf{0}\\
+\mathbf{0} && \mathbf{0} && \mathbf{I} && \mathbf{0}\\ 
+\mathbf{0} && \mathbf{0} && \mathbf{0} && \mathbf{I}\\
+e^{ik_yh_y} && \mathbf{0} && \mathbf{0} && \mathbf{0} \\
+\mathbf{0} && e^{ik_xh_x} && \mathbf{0} && \mathbf{0}\\
+\mathbf{0} && \mathbf{0} && e^{ik_xh_x} && \mathbf{0}\\
+\mathbf{0} && \mathbf{0} && e^{ik_yh_y} && \mathbf{0}\\
+\mathbf{0} && \mathbf{0} && e^{ik_xh_x}e^{ik_yh_y} && \mathbf{0}\\
+\end{bmatrix}
+\begin{bmatrix}
+a_{B} \\
+a_{L} \\
+a_{LB} \\
+a_{int} 
+\end{bmatrix}
+= T \hat{a}
+\end{equation}
+Now we post- and pre- multiply \ref{twodfem} by $T$ and its complex conjugate 
+$\bar{T}$ and obtain a complex eigenvalue problem similar to the 1D case. We 
+then follow the same process of prescribing wavenumbers and solving the 
+eigenvalue problem to obtain the corresponding frequencies.
 
 \subsection{Uniform material}
+Here we consider a uniform material with Lam\'e constants $\lambda=1$ and 
+$\mu=1$. In order to fully characterize the wave propagation features of the 2D 
+material, we only need to solve the eigenvalue equation for wave vectors in the 
+irreducible Brillouin zone (IBZ) depicted in Figure \ref{bloch}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.25\textwidth]{twodunifcell.pdf}
+	\caption{Unit cell for the homogeneous material}
+	\label{fig:twodunifcell}
+\end{figure}
+
+The result of solving the eigenvalue equation along the (IBZ) is shown in 
+Figure \ref{fig:twodunif}. The dispersion relation is considerably more complex 
+and it appears that for a given frequency there are sometime two possible 
+wavenumbers along each side of the IBZ. These degeneracies are due to the fact 
+that the 2D material supports longitudinal and transverse waves. Most of the 
+dispersion curves are straight which is expected for a uniform material. The 
+curved lines can be attributed to Bloch harmonics \cite{veres13}.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{twodunif.pdf}
+	\caption{Dispersion relation for the 2D homogeneous material plotted along 
+	the IBZ}
+	\label{fig:twodunif}
+\end{figure}
 
 \subsection{Laminate}
+A similar analysis is performed for a laminate with one material phase with 
+$\lambda_1 = 160$, $\mu_1 = 1$, and $\rho_1 = 8$ surrounded by a second 
+material phase with $\lambda_2 = \mu_2 = \rho_2 = 1$ on the outside of the unit 
+cell.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.25\textwidth]{twodlayrdcell.pdf}
+	\caption{Unit cell for the laminate}
+	\label{fig:twodlayrdcell}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{twodlayrd.pdf}
+	\caption{Dispersion relation for the laminate plotted along the IBZ}
+	\label{fig:twodlayrd}
+\end{figure}
 
 \subsection{Material with inclusions}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.25\textwidth]{twodrescell.pdf}
+	\caption{Unit cell for the 2D material with square inclusions}
+	\label{fig:twodrescell}
+\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{twodunif.pdf}
+	\caption{Dispersion relation for the 2D material with 
+	square inclusions plotted along the IBZ}
+	\label{fig:twodres}
+\end{figure}
 
 %------------------------------- FUTURE WORK  ---------------------------------%
 %  This one will be a little difficult. Assuming you have done your literature 
@@ -1089,6 +1196,16 @@ matrix is a little more complicated due to the added dimension.
 %  of research in phononic media.
 %------------------------------------------------------------------------------%
 \section{Future work}
+In the near future it would be interesting to examine the effect of disorder on 
+the diatomic mass spring system. Additionally, it would be of interest to 
+develop a finite element method for analysis of disordered materials. Perhaps a 
+modification of the Bloch condition or the consideration of ``supercell" may be 
+what is needed.
+
+Additionally, it is of future research interest to explore dynamic 
+homogenization of these phononic media. This is going to require a more 
+thorough knowledge of static homogenization theory such that a generalization 
+may be made.
 
 %-------------------------------- CONCLUSION  ---------------------------------%
 %  Recapitulate and make sure that the audience knows that you are in a 
@@ -1098,6 +1215,14 @@ matrix is a little more complicated due to the added dimension.
 %  them.
 %------------------------------------------------------------------------------%
 \section{Conclusion}
+At the heart of research in phononic media, dispersion relations encapsulate a 
+majority of the information needed to characterize the wave propagation in 
+materials. In this independent study, a large amount of effort was put into 
+developing the analytical and computational skills needed to calculate 
+dispersion relations. As such, we are well poised to thrust ourselves into one 
+of the active research areas of damping, nonlinear systems, or disordered 
+systems and soon enough should be able to study dynamic homogenization of these 
+phononic media. 
 
 %------------- ADDITIONAL STUDIES OF HETEROGENEOUS MATERIALS  -----------------%
 %  Here quickly outline the chapters of the lecture notes that you studied and 

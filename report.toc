@@ -22,13 +22,13 @@
 \contentsline {subsection}{\numberline {6.1}Uniform bar}{16}
 \contentsline {subsection}{\numberline {6.2}Layered composite}{18}
 \contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{20}
-\contentsline {subsection}{\numberline {7.1}Uniform material}{21}
-\contentsline {subsection}{\numberline {7.2}Laminate}{21}
-\contentsline {subsection}{\numberline {7.3}Material with inclusions}{21}
-\contentsline {section}{\numberline {8}Future work}{21}
-\contentsline {section}{\numberline {9}Conclusion}{21}
-\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{21}
-\contentsline {section}{\numberline {11}Acknowledgements}{21}
-\contentsline {section}{\numberline {A}Appendix}{21}
-\contentsline {subsection}{\numberline {A.1}Verlet integration}{21}
-\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{21}
+\contentsline {subsection}{\numberline {7.1}Uniform material}{22}
+\contentsline {subsection}{\numberline {7.2}Laminate}{22}
+\contentsline {subsection}{\numberline {7.3}Material with inclusions}{22}
+\contentsline {section}{\numberline {8}Future work}{22}
+\contentsline {section}{\numberline {9}Conclusion}{25}
+\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{25}
+\contentsline {section}{\numberline {11}Acknowledgements}{26}
+\contentsline {section}{\numberline {A}Appendix}{26}
+\contentsline {subsection}{\numberline {A.1}Verlet integration}{26}
+\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{26}
