@@ -3,37 +3,32 @@
 \contentsline {subsection}{\numberline {1.2}Band gaps}{2}
 \contentsline {section}{\numberline {2}Literature review}{3}
 \contentsline {subsection}{\numberline {2.1}History of phononic media}{3}
-\contentsline {subsection}{\numberline {2.2}Active research areas and open fields}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}Damping}{3}
-\contentsline {subsubsection}{\numberline {2.2.2}Nonlinear systems}{3}
-\contentsline {subsubsection}{\numberline {2.2.3}Disordered materials}{4}
-\contentsline {subsubsection}{\numberline {2.2.4}Dynamic effective properties}{4}
-\contentsline {section}{\numberline {3}Dispersion relations}{4}
-\contentsline {subsection}{\numberline {3.1}Floquet-Bloch theorem}{5}
-\contentsline {subsection}{\numberline {3.2}First principles and example problems}{5}
-\contentsline {subsubsection}{\numberline {3.2.1}Scalar wave equation}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Monatomic lattice}{6}
-\contentsline {subsubsection}{\numberline {3.2.3}Diatomic lattice}{8}
-\contentsline {subsubsection}{\numberline {3.2.4}Transfer matrix method}{9}
-\contentsline {section}{\numberline {4}Computational methods for phononic media}{9}
-\contentsline {subsection}{\numberline {4.1}Plane-wave expansion method}{9}
-\contentsline {subsection}{\numberline {4.2}Finite difference method}{9}
-\contentsline {subsection}{\numberline {4.3}Finite element method}{9}
-\contentsline {subsection}{\numberline {4.4}Multiple scattering method}{10}
-\contentsline {section}{\numberline {5}Analysis of lattice structures via real time evolution}{10}
-\contentsline {subsection}{\numberline {5.1}Monatomic lattice}{10}
-\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{10}
-\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{10}
-\contentsline {subsection}{\numberline {6.1}Uniform bar}{10}
-\contentsline {subsection}{\numberline {6.2}Layered composite}{15}
-\contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{15}
-\contentsline {subsection}{\numberline {7.1}Uniform material}{15}
-\contentsline {subsection}{\numberline {7.2}Laminate}{15}
-\contentsline {subsection}{\numberline {7.3}Material with inclusions}{15}
-\contentsline {section}{\numberline {8}Future work}{15}
-\contentsline {section}{\numberline {9}Conclusion}{15}
-\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{15}
-\contentsline {section}{\numberline {11}Acknowledgements}{15}
-\contentsline {section}{\numberline {A}Appendix}{16}
-\contentsline {subsection}{\numberline {A.1}Verlet integration}{16}
-\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{16}
+\contentsline {subsection}{\numberline {2.2}Active research areas and open fields}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Damping}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Nonlinear systems}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Disordered materials}{5}
+\contentsline {section}{\numberline {3}Dispersion relations}{6}
+\contentsline {subsection}{\numberline {3.1}Floquet-Bloch theorem}{6}
+\contentsline {subsection}{\numberline {3.2}First principles and example problems}{6}
+\contentsline {subsubsection}{\numberline {3.2.1}Scalar wave equation}{7}
+\contentsline {subsubsection}{\numberline {3.2.2}Monatomic lattice}{7}
+\contentsline {subsubsection}{\numberline {3.2.3}Diatomic lattice}{9}
+\contentsline {subsubsection}{\numberline {3.2.4}Laminate}{10}
+\contentsline {section}{\numberline {4}Computational methods for phononic media}{11}
+\contentsline {section}{\numberline {5}Analysis of lattice structures via real time evolution}{12}
+\contentsline {subsection}{\numberline {5.1}Monatomic lattice}{12}
+\contentsline {subsection}{\numberline {5.2}Diatomic lattice}{13}
+\contentsline {section}{\numberline {6}Analysis of 1D continuum materials via finite element method}{15}
+\contentsline {subsection}{\numberline {6.1}Uniform bar}{15}
+\contentsline {subsection}{\numberline {6.2}Layered composite}{18}
+\contentsline {section}{\numberline {7}Analysis of 2D continuum materials via finite element method}{18}
+\contentsline {subsection}{\numberline {7.1}Uniform material}{18}
+\contentsline {subsection}{\numberline {7.2}Laminate}{18}
+\contentsline {subsection}{\numberline {7.3}Material with inclusions}{18}
+\contentsline {section}{\numberline {8}Future work}{18}
+\contentsline {section}{\numberline {9}Conclusion}{18}
+\contentsline {section}{\numberline {10}Additional studies of heterogeneous materials}{18}
+\contentsline {section}{\numberline {11}Acknowledgements}{18}
+\contentsline {section}{\numberline {A}Appendix}{18}
+\contentsline {subsection}{\numberline {A.1}Verlet integration}{18}
+\contentsline {subsection}{\numberline {A.2}Finite difference in time for real time evolution FEM}{18}

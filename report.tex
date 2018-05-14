@@ -165,44 +165,117 @@ phononic media, and dynamic effective properties.
 %  done before you do anything.
 %------------------------------------------------------------------------------%
 \subsection{History of phononic media}
-The development of photonic crystals in 1987 by Yablonovitch and John can be 
-viewed as a jumping off point for the development of phonic media, since five 
-years later Sigalas and Economou  
+Phononic crystals as a concept first appeared in the literature five years 
+after the proposal of photonic crystals in 1987 by Yalonovitch and John 
+\cite{hussein14}. The 1992 paper by Sigalas and Economou proposed a 2D phononic 
+crystal where only in-plane shear and longitudinal waves were considered and 
+did observe the presence of band gaps. By the next year, Sigalas and Economou 
+were trying to find configurations that resulted in the largest band gaps. They 
+found that, for elastic waves, the matrix should be stiffer and denser than the 
+inclusions. Also in the 90s, 3D phononic crystals, sonic crystals, free surface 
+waves, and various symmetries in the arrangement of inclusions were the topic 
+of much research. 
+
+In the early 2000s, applied research in phononic crystals began to grow 
+rapidly. Presence of band gaps in these materials naturally resulted in 
+applications related to acoustic and vibrational insulation and isolation. The 
+emergence of wave guides due to defect engineering can be traced back to 1997 
+in (cite). There have also been applications of phononic crystals as fluid 
+sensors to determine rheological properties, focusing of acoustic waves, 
+acoustic/elastic logic gates, and coupling of acoustic/elastic waves with 
+electromagnetic signals. If these previous applications are called passive wave 
+control, the research in active wave control grew right along side these 
+efforts also beginning in the early 2000s and leading up to today.
+
+Parallel to this thrust of phononic crystal research in the early 2000s was the 
+discovery of band gaps much lower than expected in a 3D lattice of rubber 
+coated lead spheres in an epoxy matrix. Materials such as these are now called 
+acoustic/elastic metamaterials, and are distinguished from phononic crystals by 
+the presence of this other band gap found below the one as characterized by the 
+periodicity of the lattice (due to Bragg scattering). They are often times 
+called subwavelength band gaps for this reason. These band gaps are instead due 
+to local resonance and are the defining property of acoustic/elastic 
+metamaterials which are sometimes called locally resonant phononic crystals. 
+Unlike, Bragg scattering band gaps the spatial arrangement of these resonators 
+do not have an effect on the formation of local resonance band gap. These 
+included resonators do not need to be arranged in a lattice, but often are in 
+order to facilitate a unit cell analysis of the material.
+
+Applications of acoustic/elastic metamaterials largely mirrors those of 
+phononic crystals without local resonance. The presence of this subwavelength 
+bandgap, however, can be combined with the Bragg band gap to create an even 
+larger range of frequencies. Outside of acoustic/elastic wave control, the 
+subwavelength band gap can be exploited for acoustic imaging with resolvable 
+length scales below what is usually allowed by the diffraction limit. A radical 
+application of these materials is acoustic cloaking where metamaterials can be 
+used to ``steer" acoustic and elastic waves around an object.
+
 
 %----------------- ACTIVE REASEARCH AREAS AND OPEN FIELDS    ------------------%
 %  This is where you need to be verbose. Show the audience you know where this
 %  field of research is today and your place in it. Inculde plenty of references
 %------------------------------------------------------------------------------%
 \subsection{Active research areas and open fields}
+Despite the explosion of interest in phononic media, the majority of the 
+literature is focused on the application of them and the band gap phenomena. As 
+such there are many avenues of theoretical research that need to be explored 
+from a traditional mechanics point of view. The incorporation of damping and 
+disorder can greatly add to the predictive capability of models. A theoretical 
+exploration of nonlinear systems may lead to more novel applications. 
+
+%Last, due 
+%to the nonlocal effects at higher frequencies and away from the long 
+%wavelength 
+%limit there is still much progress to be made in calculating the dynamic 
+%effective properties (dynamic homogenization). 
 
 %---------------------------------  DAMPING   ---------------------------------%
 %  You have many good references here but only from Hussein and Frazier. Try to 
-%%%  include references from two other authors. Damping is pretty easy to write 
-%%%%  about
+%  include references from two other authors. Damping is pretty easy to write 
+%  about
 %------------------------------------------------------------------------------%
 \subsubsection{Damping}
 In applications, energy is often lost through damping. This will affect the 
 propagation of waves, and thus models that consider this effect will better 
-represent the actual behavior of a material. Within the body of research on 
-damping, studies focus on either harmonic wave propagation or free wave 
-propagation. A study of harmonic wave propagation entails one in which the wave 
-numbers are confined to be real while free wave propagation allows for complex 
-wave numbers (and as a result evanescent waves). Standard computational methods 
-as discussed in Section \ref{methods} are used in both types of studies. 
+represent the actual behavior of a material. While there is plenty of 
+literature pertaining to damping in periodic materials and structures, phononic 
+media with dissipative wave propagation has not received too much attention. 
+Sprik and Wegdam considered acoustic wave propagation in sonic crystals with 
+viscous fluids in which an imaginary component was given to the elastic 
+modulus. It wasn't until recently that damping was incorporated directly into 
+Bloch wave analysis by assuming a complex frequency. 
 
-In \cite{hussein14}, dispersion relations are first obtained for a 1D diatomic 
-lattice with linear viscous damping. The method of analysis for this example is 
-then extended to a 1D lattice with internal resonators and also a 2D phononic 
-crystal with square unit cells embedded with a single, denser square inclusion. 
-The general result of including damping is the collapase of the band gap 
-between the optical and acoustic branches of the dispersion relation. This 
-occurs such that the optical branch lowers proportional to the amount of 
-damping.
+Within the body of research on damping, studies focus on either harmonic wave 
+propagation or free wave propagation. A study of harmonic or prescribed wave 
+propagation entails one in which the frequency is confined to be real valued 
+while free wave propagation allows for complex frequency which can result in 
+attenuation of the wave in time. In either the case, the wavenumber is allowed 
+to be complex which can lead to spatial attenuation. As described in Frazier's 
+thesis, the case of harmonic wave propagation corresponds to a system that is 
+being subject to some periodic excitation indefinitely. The case of free wave 
+propagation corresponds to a physical system that has been subjected to an 
+impulse loading. Each type of analysis yields unique results in the presence of 
+damping. 
+
+For a 1D layered composite with viscous damping, Frazier is able to use a 
+transfer matrix method to derive analytical expressions for the dispersion 
+relation. Due to the nature of the viscous damping model (dependent on the 
+strain rate), at higher frequencies the effects of damping become more 
+apparent. First, it is found that the dispersion relations in the free wave and 
+harmonic wave propagation cases are identical in the absence of damping. 
+Accounting for damping, the frequency band structure tends to ascend in the 
+prescribed wave propagation case and descend in the free wave propagation case. 
+As the amount of damping increases, band gaps tend to close which is referred 
+to as band gap annihilation. Additionally, the band gaps, with damping, in the 
+free wave case much up with the natural frequencies of a finite, phononic 
+structure with damping. The band gaps, with damping, in the prescribed wave 
+case match up with observed attenuation in phononic media. 
 
 %----------------------------- NONLINEAR SYSTEMS ------------------------------%
 %  Same thing here. You will need to branch out in terms of references here.
 %------------------------------------------------------------------------------%
 \subsubsection{Nonlinear systems}
+%  Here follow that one example in hussein review paper
 Relative to linear studies, there have been fewer studies of nonlinear phononic 
 materials. Due to nonlinearities, Bloch's theorem cannot not be applied in the 
 same way to obtain an eigenvalue problem for the dispersion relation -at least 
@@ -211,53 +284,84 @@ in order to study weakly non-linear systems. These techniques ``expand" the
 governing equations and produce a linear equation while instead considering the 
 nonlinearities to be a part of forcing term.
 
+%  need to understand what is meant by nonlinear in this case 
+Another way to study the dispersion properties of nonlinear systems, is to 
+consider the real time evolution of a system. This provided the system is 
+simple enough such as a discrete lumped parameter system consisting of masses 
+and springs. Frazier and Kochmann do just this when considering systems with 
+bistable elements. In the band gap of these phononic structures, small 
+amplitude waves are attenuated and there is no transmission. They find that 
+despite this conventional behavior at low driving amplitudes, there is a 
+critical driving amplitude that will cause these bistable elements to flip to 
+the other well of potential energy and allow for the transmission of nonlinear 
+waves.
+
+%  manybe include one of katia bertoldi's papers? i think she does some 
+%nonlinear stuff
+
 %-------------------------- DISORDERED MATERIALS ------------------------------%
 %  This is also an easy one to write about. The challenges and the reason why
 %  there are so few references is obvious.
 %------------------------------------------------------------------------------%
 \subsubsection{Disordered materials}
 Just as sparse as nonlinear systems, the study of phononic media with disorder 
-has not been widely researched. Incorporating even small amounts of disorder 
-can increase the predictablility of a model much like damping. In the 
-manufacturing process perfect periodicity may not be able to be acheived. The 
-difficulty in disordered phononic media is that the conventional method of 
-Bloch wave analysis does not work. A requirement of Floquet-Bloch theory is 
-that the material properties vary periodically with a known period. A single 
-unit cell can no longer model the behavior of the entire system if there is 
-even mild disorder.
+has not been widely researched. Incorporating disorder can increase the 
+predictablility of a model much like damping. In the manufacturing process 
+perfect periodicity may not be able to be acheived. The difficulty in 
+disordered phononic media is that the conventional method of Bloch wave 
+analysis does not work. A requirement of Floquet-Bloch theory is that the 
+material properties vary periodically with a known period. A single unit cell 
+can no longer model the behavior of the entire system if there is even a small 
+amount of disorder.
 
 Recently, there has been research done on so called hyperuniform phononic 
 crystals. Hyperuniformity is a way of categorizing point distributions. It 
 specifically refers to distributions with the fluctuations in density completly 
 vanish as the window of observation increases. Despite not having any 
-periodicity, and therefore no Bragg peaks, there still exists band gaps.
+periodicity, and therefore no Bragg scattering, there still exists band gaps.
 
-An earlier paper in 2010 by, examined a 2d phononic medium with circular 
+In 2004, Zuo-Don and Jian-Chun used the finite difference time domain method to 
+study a weakly disordered phononic crystal consisting of a homogeneous matrix 
+embedded with an array of cylinders. Disorder was added by perturbing the 
+location of the cylinders. As the disorder in the system increased, it was 
+found that the band gaps dissapeared which makes sense sense Bragg scattering 
+occurs do to the periodicity of the inclusions. Chen and Wang used the transfer 
+matrix method to study a 1D layered composite where the layer thickness was 
+varied. Here they look at a localization of wave propagation which is a 
+phonomena that is expected in random materials. The localization factor that 
+they defined is also used to study band gaps as the material becomes more 
+disordered. An paper 2010 by, examined a 2d phononic medium with circular 
 inclusions arranged in a lattice. Disorder was added to the system by 
 increasing or decreasing the size of the inclusions or displacing them by some 
 small amount. Here they used the plane-wave expansion method. Of course, due to 
 the added disorder they were no longer able to look at a single unit cell and 
 instead define a `supercell' for which the analysis was carried out. 
 
-
 %--------------------- DYANMIC EFFECTIVE PROPERTIES  --------------------------%
 %  Tie this into homogenzation. Remember this is a part of your independent 
 %  study and you should have some insight here.
 %------------------------------------------------------------------------------%
-\subsubsection{Dynamic effective properties}
-With any heterogeneous material, it is of interest to be able to define 
-effective properties and model the material as one homogenous material. This 
-reduces the computational cost of modeling. Most analysis in homogenization has 
-been done in the long wavelength limit. Trying to perform a similar type of 
-analysis on a material with dispersive properties results in the loss of this 
-behavior. The problem here lies in the volume averages used to calculate the 
-effective properties. The richness in behavior of these phononic media is due 
-to the relative motion of contituents as such the behavior is said to be 
-nonlocal and this must be taken into affect when trying to formulate dynamic 
-effective properties.
+%\subsubsection{Dynamic effective properties}
+%With any heterogeneous material, it is of interest to be able to define 
+%effective properties and model the material as one homogenous material. This 
+%reduces the computational cost of modeling. Most analysis in homogenization 
+%has 
+%been done in the long wavelength limit. Trying to perform a similar type of 
+%analysis on a material with dispersive properties results in the loss of this 
+%behavior. The problem here lies in the volume averages used to calculate the 
+%effective properties. The richness in behavior of these phononic media is due 
+%to the relative motion of contituents as such the behavior is said to be 
+%nonlocal and this must be taken into affect when trying to formulate dynamic 
+%effective properties.
 
-Michael Frazier has done some work calculating the dynamic effective viscosity 
-in damped 1D layered structures.
+%Due to the presence of subwavelength band gaps, acoustic/elastic metamaterials 
+%have been subject to much research on homogenization and finding effective 
+%material properties. Li and Chan found that in the band gap the effective 
+%elastic modulus and effective density of an acoustic metamaterial with rubber 
+%spheres were negative. 
+
+%Michael Frazier has done some work calculating the dynamic effective viscosity 
+%in damped 1D layered structures.
 
 %--------------------------- DISPERSION RELATIONS  ----------------------------%
 %  Okay so now you've been doing a lot of talking about past and current 
@@ -267,7 +371,10 @@ in damped 1D layered structures.
 %  and just how much information is jam packed into this little thing
 %------------------------------------------------------------------------------%
 \section{Dispersion relations}
-Dispersion relations provide all of the information necessary to characterize 
+In order to start performing research in the field of phononic media, it is of 
+high priority to first know what dispersion relations are, how to solve for 
+them (analytically or computationally), and when to use them. Dispersion 
+relations provide all of the information necessary to characterize 
 the behavior of waves propagating in a phononic medium. Mathematically, they 
 are a relationship between the frequency of a wave and its wavenumber. From 
 this relationship, it is possible to determine the phase velocity and group 
@@ -275,9 +382,9 @@ velocity. Dispersion relationships immediately indicate where the frequency
 band gaps of a system are. For this reason, they are also called frequency band 
 diagrams or frequency band structures.
 
-As will be shown, there are a variety of waves to calculate dispersion 
-relations, however, there is a commonality between each type of analysis. This 
-common feature is the application of Floquet-Bloch theory.
+As will be shown, there are a variety of ways to calculate dispersion 
+relations, however, there is a common thread between each type of analysis. 
+This common feature is the application of Floquet-Bloch theory.
 
 %-------------------------- FLOQUET-BLOCH THEOREM  ----------------------------%
 %  To derive dispersion relations you need to know this theorm. It is an 
@@ -299,9 +406,7 @@ In the above, $\tilde{f}_1$ and $\tilde{f}_2$ are also periodic in $x$
 \cite{magnus79}.
 
 Bloch's theorem is similar to Floquet's theorem but applies to higher 
-dimensions \cite{laude15}. 
-
-Given
+dimensions \cite{laude15}. Given
 \begin{equation} \label{blocheqn}
 -\nabla \cdot \left( c(\mathbf{r}) \nabla u(\mathbf{r}) \right) = \omega^2 
 u(\mathbf{r})
@@ -322,19 +427,22 @@ These eigensolutions are called \emph{Bloch waves} and equation
 %  framing earlier
 %------------------------------------------------------------------------------%
 \subsection{First principles and example problems}
+To get a flavor for what dispersion relations look like and some of the 
+features of analytical solutions, we start by considering some simple 
+systems. We will see that by asserting a Bloch wave solution that we can derive 
+dispersion relations directly from a system's equations of motion.
 
 \subsubsection{Scalar wave equation}
 The scalar wave equation is 
 \begin{equation} \label{swe}
 \frac{\partial^2 u}{\partial t^2} = c^2 \frac{\partial^2 u}{\partial x^2}
 \end{equation}
-where $u$ is the displacement and $c$ is the wave speed. Assume a solution of 
+where $u$ is the displacement and $c$ is the wave speed. Assume solution of 
 the form
-\begin{equation}
-u(x,t) = A\sin(kx - \omega t)
+\begin{equation} \label{scalarsoln}
+u(x,t) = \tilde{u}(x)e^{i(kx - \omega t)}
 \end{equation}
-In fact, we can assume $u(x,t) = f(kx-\omega t)$ and the following results will 
-still hold. $k$ is the wave number which describes the ``spatial" frequency of 
+$k$ is the wave number which describes the ``spatial" frequency of 
 the wave for a fixed time and $\omega$ is the angular frequency that describes 
 the temporal frequency of the wave. Substituting this solution into the wave 
 equation gives
@@ -346,17 +454,22 @@ Taking the square root of the above
 \omega = \pm c k
 \end{equation}
 This equation gives a relationship between the frequency of the wave and its 
-wave number. We call relations of this type dispersion relations. In general, 
-dispersion relations can be written in the form
+wave number. We call relations of this type dispersion relations. It is 
+important to note that this is a constraint on waves propagating in a system 
+governed by (\ref{swe}). If a wave is a solution to (\ref{swe}) of the form 
+(\ref{scalarsoln}) its wavenumber and frequency must satisfy the above equation.
+
+In general, dispersion relations can be written in the form
 \begin{equation} \label{wk}
 \omega = \omega(k)
 \end{equation}
-To get a flavor for what dispersion entails, we need to look at the phase 
-velocities waves. The phase velocity of a wave is
+To understand what dispersion entails, we need to look at the phase velocities. 
+The phase velocity is the speed at which a wave of a specific frequency 
+propagates at in a medium. It is given by
 \begin{equation}
 v_p = \frac{\omega}{k}
 \end{equation}
-Thus, for the scalar wave equation discussed in this introductory paragraph
+Thus, for the scalar wave equation 
 \begin{equation}
 v_p = c
 \end{equation}
@@ -386,10 +499,10 @@ where $u_n$ gives the displacement of the $n$th node and $k$ is the spring
 constant of each spring. To acquire, the dispersion relation for this system we 
 assume a solution of the form
 \begin{equation} \label{bloch}
-u_n = Ae^{i(kx_n-\omega t)}
+u_n(x,t) = \tilde{u}(x_n)e^{i(kx_n - \omega t)}
 \end{equation}
-$A$ is the amplitude of the wave and $x_n = nl$ where $l$ is the distance 
-between the masses. Substituting the above into the equation of motion
+$\tilde{u}(x)$ is the amplitude of the wave and $x_n = nl$ where $l$ is the 
+distance between the masses. Substituting the above into the equation of motion
 \begin{align*}
 -m \omega^2 u_n   &= ke^{i(k(n-1)l - \omega t)} - 2ku_n + ke^{i(k(n+1)l - 
 \omega t)} \\
@@ -441,12 +554,32 @@ exponentially die off. Wave numbers in the stop band are imaginary. Looking at
 wave numbers are imaginary are called \emph{evanescent} waves.
 
 Solving for wavenumber in terms of a given frequency 
-\begin{equation} 
+\begin{equation} \label{imagwavenum}
 \mu = \arccos{\left(1-\frac{\Omega^2}{2}\right)}
 \end{equation}
+We see that when $\Omega > 2$ the wave number becomes complex valued. The 
+expression for (\ref{imagwavenum}) when we extend the values of $\mu$ into the 
+complex plane is 
+\begin{equation}
+		\mu = -i\log \left[ \xi + i(1-\xi^2)^\frac{1}{2} \right]
+\end{equation}
+where
+\begin{equation}
+	\xi = 1-\frac{\Omega^2}{2}
+\end{equation}
+The implication here is that when the wave number becomes imaginary the $i$ in 
+the wavenumber will multiply with $i$ in (\ref{bloch}) resulting in a 
+exponential decay of the solution in space. This means there is no wave 
+propagation.
 
 \subsubsection{Diatomic lattice}
-Next, we consider a diatomic lattice as shown in Figure \ref{fig:dms}.
+Next, we consider a diatomic lattice as shown in Figure \ref{fig:dms} with 
+alternating masses, but springs of the same spring constants. There are two 
+ways to solve this problem. The first is called the inverse method which 
+imposes a wave number and gives frequencies. The second is the 
+direct method which imposes a frequency and gives wave numbers. We will use the 
+inverse method for the diatomic lattice and later for a laminate use the 
+transfer matrix method.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{diatomic-mass-spring.pdf}
@@ -454,19 +587,16 @@ Next, we consider a diatomic lattice as shown in Figure \ref{fig:dms}.
 	infinitely to the left and right.}
 	\label{fig:dms}
 \end{figure}
-
 After assuming a harmonic motion
 \begin{equation}
 u_n = \tilde{u}(x_n)e^{i\omega t}
 \end{equation}
 The equations of motion for a diatomic lattice can be written
-\begin{equation}
-(-\omega^2m_2 + 2k)u_{2n} - k(u_{2n-1} + u_{2n+1}) = 0
-\end{equation}
-\begin{equation}
-(-\omega^2m_1 + 2k)u_{2n+1} - k(u_{2n} + u_{2n+2}) = 0
-\end{equation}
-We can write this in a matrix for
+\begin{align}
+	(-\omega^2m_2 + 2k)u_{2n} - k(u_{2n-1} + u_{2n+1}) &= 0 \\
+	(-\omega^2m_1 + 2k)u_{2n+1} - k(u_{2n} + u_{2n+2}) &= 0
+\end{align}
+We can write this in a matrix form
 \begin{equation}
 (\mathbf{K}_n - \omega^2 \mathbf{M})\mathbf{u}_n + 
 \mathbf{K}_{n-1}\mathbf{u}_{n-1}
@@ -480,31 +610,42 @@ u_{2n} \\
 u_{2n+1}
 \end{bmatrix}
 \end{equation}
-
 We will use the inverse method to solve for the dispersion relation. We use 
 Bloch's theorem to write
 \begin{equation}
 \mathbf{u_n}= \mathbf{\hat{u}}(\mu)e^{in\mu}
 \end{equation}
-
 Finally, we can write
 \begin{equation}
 \left[\mathbf{K}_n + \mathbf{K}_{n-1}e^{-i\mu} + \mathbf{K}_{n+1}e^{i\mu} 
 -\omega^2 \mathbf{M} \right] \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
 \end{equation}
-
 \begin{equation}
 \left[\mathbf{\Bar{K}}(\mu) -\omega^2 \mathbf{M} \right] 
 \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
 \end{equation}
-
 Calculating the determinant of the matrix on the left we get the relation
 \begin{equation}
 \omega =\pm \sqrt{k\frac{m_1+m_2}{m_1m_2} \pm k 
 \sqrt{\left(\frac{m_1+m_2}{m_1m_2}\right) - \frac{4(\sin{ka})^2}{m_1m_2}}}
 \end{equation}
+The dispersion relation for the diatomic lattice is shown in Figure 
+\ref{fig:dia-exact}. Notice that there are now two curves unlike in the 
+monatomic case. Each curve corresponds to a mode of vibration where in this 
+case the bottom one is called the acoustic mode and the top is called the 
+optical mode. Another notable feature is the formation of a band gap in between 
+the two modes. Like the monatomic case the wavenumbers become imaginary in this 
+region. Additionally, there is still a stop band, but in this case the cutoff 
+frequency is lower -about $\Omega = 1.75$.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.75\textwidth]{diatomic-exact.pdf}
+	\caption{Dispersion relation for the diatomic lattice system with 
+	$m_1=1$, $m_2=2$, and $k=1$.}
+	\label{fig:dia-exact}
+\end{figure}
 
-\subsubsection{Transfer matrix method}
+\subsubsection{Laminate}
 The transfer matrix method enforces continuity between layers of a system. At 
 the interface between two unit cells the displacements must be equal and the 
 forces or tractions must be as well. First, a relationship between these 
@@ -522,57 +663,56 @@ displacements and forces in one cell to another.
 %  who aren't as familiar with these computational methods
 %------------------------------------------------------------------------------%
 \section{Computational methods for phononic media} \label{methods}
-\subsection{Plane-wave expansion method}
-According to \cite{cao04}, the plane-wave method is widely used because of its 
-convenience. Apparently, the drawback of the method is slow convergence.
-\begin{enumerate}
-	\item To start expand the displacements and material properties in the wave 
-	equation in terms of a Fourier series (assert solutions in the form of 
-	Bloch waves)
-	\item Substitute these expansions back into the wave equation
-	\item After forming some kind of inner products, an eigenvalue problem can 
-	be found
-	\item In order to actually find the dispersion relations, one must solve 
-	the eigenvalue problem for a range of wave numbers
-\end{enumerate}
+While we were able to derive explicit dispersion relations in the examples 
+given in the previous section, it is quickly becomes unfeasible even for some 
+2D and most 3D cases. We must turn to computational analysis in these cases in 
+order to compute the dispersion relations for these phononic media. Here the 
+four most prominent methods in the literature are the plane-wave expansion 
+method, finite difference method, finite element method, and the multiple 
+scattering method. Each is explained briefly in this section, however, for the 
+independent study we choose to specialize in the finite element method which 
+will also be used in further research.
 
-\subsection{Finite difference method}
+According to \cite{cao04}, the plane-wave method is widely used because of its 
+convenience. Apparently, the drawback of this method is slow convergence. In 
+general, the displacements and material properties are first expanded in a 
+series related to the lattice vectors and a Bloch wave solution is asserted. 
+These expansion are substituted back into the wave equation which after some 
+manipulation leads to an eigenvalue problem \cite{hussein14}.
+
 Finite difference methods are similar to the plane wave expansion method with 
 the advantage that the solution convergence is faster for materials with 
-multiple phases
-\begin{enumerate}
-	\item Instead of expanding the solution on material properties, the 
-	differential operators of the wave equation are expanded using standard 
-	finite differences
-	\item The equations of motion can be written as a matrix equation
-	\item An eigenvalue problem appears after asserting a Bloch wave type 
-	solution
-	\item Once again the eigenvalue problem must be solved for a range of wave 
-	numbers
-\end{enumerate}
+multiple phases. Instead of expanding the solution and material properties, the 
+differential operators of the wave equation are approximated using standard 
+finite difference formulas. At this point, it is possible to solve the 
+equations at various time steps to obtain the real time evolution of the 
+system. From the real time evolution, it is possible to take the Fourier 
+transform of the data in order to obtain the wave number of a wave for which 
+the excitation frequency is known and thus form a dispersion relation. 
+Alternatively, asserting a Bloch wave solution after using the finite 
+difference approximation results in an eigenvalue value problem that yields 
+eigenfrequencies given an imposed wave number. 
 
-\subsection{Finite element method}
 The finite element method is useful for complex material geometries. When 
 applied to periodic systems, the domain of computation is greatly reduced via 
-application of Bloch's theorem. The standard outline for the finite element 
-method is as follows
-\begin{enumerate}
-	\item Formulate the weak form of the wave function by multiplying by a 
-	trial function and integrating
-	\item Write the equation in matrix form by allowing the solution to be 
-	expressed as a combination of weight functions
-	\item Apply the Bloch's theorem
-	\item Solve the resulting eigenvalue problem for a range of wave numbers
-\end{enumerate}
+application of Bloch's theorem. A weak from of the governing equations is still 
+formulated by multiplying by a trial function, but the integration is performed 
+only over a unit cell which represents the phononic medium of interest. After 
+approximating the solution and trial function with appropriate weight 
+functions, Bloch's theorem can be used to impose a Bloch condition on the 
+boundary which reduces the degrees of freedoms of the system by relating the 
+displacements at one boundary to the opposite boundary plus a phase multiplier.
+This process results in an eigenvalue problem similar to the above two cases. 
+As this method will be used in future studies, it will be elaborated on in 
+detail in upcoming sections.
 
-\subsection{Multiple scattering method}
 Compared to the above methods, the multiple scattering method has an advantage 
-when the material under consideration contains scattering elements 
-(resonators?). The method relies on separating the solution into fields 
-associated with the incident wave and then waves scattered from each scattering 
-element in the system. Once the solution, at a single scattering element a 
-system of equations can be solved for the rest of the scattered fields. The 
-dispersion relations are then found by application of Bloch's theorem. 
+when the material under consideration contains scattering elements. The method 
+relies on separating the solution into fields associated with the incident wave 
+and then waves scattered from each scattering element in the system. Once the 
+solution, at a single scattering element a system of equations can be solved 
+for the rest of the scattered fields. The dispersion relations are then found 
+by application of Bloch's theorem. 
 
 %---------- ANALYSIS OF LATTICE STRUCTURES VIA REAL TIME EVOLUTION ------------%
 %  Real time evolution is sort of like a finite difference method right? But it 
@@ -583,17 +723,29 @@ dispersion relations are then found by application of Bloch's theorem.
 %  thing with Bloch's theorem
 %------------------------------------------------------------------------------%
 \section{Analysis of lattice structures via real time evolution}
+Here, the monatomic and diatomic lattice systems are computationally realized
+using the finite difference time domain method. A Bloch wave solution is not 
+imposed which will allow us to directly visualize the behavior of the 
+system inside and outside of the band gaps and stop bands. Additionally, the 
+(discrete) Fourier transform of the real time evolution data is taken in order 
+to find the dispersion relations in each case. 
 
 \subsection{Monatomic lattice}
-Here we verify the results of Section \ref{monatomic}. The system is modeled 
-using the equations of motion (\ref{eqnms}) and the Verlet integration method. 
-Figure \ref{fig:matlab-dr} displays the dispersion relation for the mass spring 
-system which has been calculated from the real time evolution of the system. 
-The system is excited in a range of frequencies between $\Omega=0$ and 
-$\Omega=2$. For each of the frequencies, the system is allowed to evolve and 
-the Fourier transform of the resulting wave is computed. In the reciprocal 
-space, there is an obvious peak at one wave number. This wave number is then 
-plotted with its corresponding frequency.
+The monatomic lattice is modeled using the equations of motion (\ref{eqnms}) 
+and the Verlet integration method. The Verlet integration method is involves a 
+central difference approximation for the time derivative in Newton's equations. 
+See Appendix \ref{verlet} for more details on the Verlet integration method. 
+One end of the system is subject to a harmonic excitation with a prescribed 
+frequency, and the other end is allowed to freely move.
+
+In order to compute the dispersion relation of the system, a range of 
+frequencies is prescribed from $\Omega=0$ to $\Omega=2$. At each frequency and 
+after allowing the system to evolve in time, a Fourier transform of the system 
+is taken in the space domain. From the Fourier transform of the displacements, 
+which is now in the wavenumber domain (recall that the wave number can be 
+thought of as the spatial frequency of the wave), the location of the peak of 
+the spectrum is taken as the wavenumber for the corresponding excitation 
+frequency. The result is Figure \ref{fig:matlab-dr}.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{matlab-dr.pdf}
@@ -602,11 +754,12 @@ plotted with its corresponding frequency.
 	\label{fig:matlab-dr}
 \end{figure}
 
-Applying a sinusoidal, forcing term to the first mass it is easy to explore the 
-attenuation effect at the stop band as seen in Figure \ref{fig:dr}. Figures 
-\ref{fig:snap19} and \ref{fig:snap21} display snapshots of the system at 
-excitation frequencies above and below $\Omega=2$. There is an obvious drop in 
-amplitude inside and outside of the stop band.
+Increasing the frequency of the harmonic excitation above the cutoff frequency 
+of the system it is easy to explore the attenuation effect at the stop band as 
+seen in Figure \ref{fig:dr}. Figures \ref{fig:snap19} and \ref{fig:snap21} 
+display snapshots of the system at excitation frequencies above and below 
+$\Omega=2$. There is an obvious drop in amplitude inside and outside of the 
+stop band.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{snap-f19.pdf}
@@ -619,6 +772,13 @@ amplitude inside and outside of the stop band.
 	\caption{Snapshot of mass spring system with $\Omega=2.1$}
 	\label{fig:snap21}
 \end{figure}
+
+From the finite difference time domain method, it is also possible to calculate 
+the values of the imaginary wavenumbers that occur for frequencies above cutoff 
+frequencies. This is done by fitting a complex exponential to the evanescent 
+waves and finding the power of the exponential term. Figure  has the results of 
+the fitting process overlaid on top of the exact plot of the evanescent 
+wavenumbers. 
 
 \subsection{Diatomic lattice}
 Here the results for a diatomic lattice are presented from a similar simulation 
@@ -844,7 +1004,7 @@ analysis for this phononic media.
 
 \appendix
 \section{Appendix}
-\subsection{Verlet integration}
+\subsection{Verlet integration} \label{verlet}
 For a single particle, the Verlet integration method is used to calculate its 
 trajectory given that the forces (and therefore the acceleration) are known. 
 The algorithm is
