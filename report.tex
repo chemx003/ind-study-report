@@ -42,7 +42,9 @@ frequencies of waves cannot propagate. These frequency band gaps have been
 utilized in many engineering applications related to vibrations and the control 
 of acoustic and elastic waves.
 
-There were three objectives for this independent study:
+The goal of the independent study was to prepare for further research in 
+phononic media. To acheive this goal there were three objectives for this 
+independent study:
 \begin{enumerate}
 	\item Study heterogeneous materials and the associated mathematical methods 
 	used to model their behavior
@@ -50,23 +52,23 @@ There were three objectives for this independent study:
 	computational methods (mainly finite elements)
 	\item Complete a computational project related to the above studies 
 \end{enumerate}
-In this report, the focus will be on the later two items as the study of 
-heterogeneous materials was completed via a set of exercises from the lecture 
-notes of Prof. Ponte-Casta\~neda \cite{pontenotes}. To this end, phononic media 
-and their applications are presented, and the interesting behavior that is the 
-presence of frequency band gaps where waves cannot propagate is described. 
+The study of heterogeneous materials was completed via a set of exercises from 
+the lecture notes of Prof. Ponte-Casta\~neda \cite{pontenotes}. In this report, 
+the focus will be on the later two items. To this end, phononic media, their 
+applications are presented, and the interesting behavior that is the 
+presence of frequency band gaps where waves cannot propagate is presented. 
 After introducing these concepts, the history and state of active research is 
 outlined in the literature review section. Dispersion relations and their 
 relation to studies in phononic media are introduced and will be central to 
-further studies in the report. While it is favorable to have exact analytical 
-expressions for these dispersion relations, it is not possible to calculate 
-this by hand for more complicated materials. As such we must utilize 
-computational methods which are presented in varying levels of detail. For 
-future research, it is planned to use the finite element method, and this is 
-the computational method that is used in the independent study. Finite elements 
+further studies in the report and in further research. While it is favorable to 
+have exact analytical expressions for these dispersion relations, it is not 
+possible to calculate these by hand for more complicated materials. As such we 
+must utilize computational methods which are presented in varying levels of 
+detail. For future research, it is planned to use the finite element method and 
+there is an emphasis on this method in the independent study. Finite elements 
 is used in the 1D and 2D case in order to obtain the dispersion relation for a 
-variety of materials. These studies will be integral for further research that 
-will advance the field.
+variety of materials. These computational tools will be integral for further 
+research related to phononic media. 
 
 %----------------------------  PHONONIC MEDIA  --------------------------------%
 %  This subsection is dedicatied to illustrating what these materials can do 
@@ -82,12 +84,14 @@ lattice of inclusions (or voids). There are several levels of classification
 within phononic media. In the literature a distinction, is made between 
 phononic materials and phononic structures. Phononic materials are infinite in 
 extent while phononic structures are finite in extent \cite{hussein10}. 
-Phononic crystals refer to a heterogenous material or non-uniform material the 
-material phases that may be fluid or solid which have a periodic arrangement in 
+Phononic crystals refer to a heterogenous material or non-uniform material 
+where the 
+material phases, that may be fluid or solid, which have a periodic arrangement 
+in 
 space \cite{hussein14}. The constituents may be arranged in such a way as to 
-have a band gap in a certain frequency range or may even be tunable such as by 
-modulating an outside field the material properties may be changed in order to 
-move the band gap. A further class of phononic media that is of much interest 
+have a band gap in a fixed frequency range. This band gap may even be tunable 
+by using an outside field to modulate material properties. 
+A further class of phononic media that is of much interest 
 is the metamaterial. Metamaterials possess ``local resonance" which is a 
 different way for producing band gaps that is not seen in phononic crystals. 
 
@@ -108,12 +112,15 @@ practical applications such as:
 	waves to propagate in one direction but not in the opposite direction 
 	\cite{zhang10}.
 	%  I need to read more on these last two
-	\item \emph{Subwavelength imaging}: \cite{sukhovich09}
-	\item \emph{Cloaking}: \cite{norris11}
+	\item \emph{Subwavelength imaging}: Metamaterials used in acoustic imaging 
+	are able to resolve extremely small features and are not limited by the 
+	traditional diffraction limit \cite{sukhovich09}.
+	\item \emph{Cloaking}: Using metamaterials, it is possible to direct 
+	acoustic/elastic waves around objects \cite{norris11}.
 \end{itemize}
-This, of course, is a non-exhaustive list with new studies in materials with 
-tunable properties, damping, non-linear affects, and disorder other novel and 
-useful applications will arise.
+This, of course, is a non-exhaustive list. New studies in materials with 
+tunable properties, damping, non-linear affects, and disorder will lead to 
+other novel and useful applications.
 
 %------------------------------  BAND GAPS  -----------------------------------%
 %  Why can these phononic media do what they do? We are still not talking about
@@ -149,14 +156,14 @@ of phononic media.
 %  Hussein does. Read that section again.
 %------------------------------------------------------------------------------%
 \section{Literature review}
-Here the field of phononic media is described. Much of the work as been applied 
-and experimental in nature. There is plenty of room for theoretical studies 
-building off of first principles in wave propagation and mechanics. These kinds 
-of studies are much needed in order to fully and accurately characterize 
-phononic media. First, past studies related to phononic media are reviewed in 
-order to examine already explored avenues of research. Afterwards, more open 
-fields of study are presented including damping, nonlinear systems, disordered 
-phononic media, and dynamic effective properties.
+Here the field of phononic media in past and present is described. Much of the 
+work as been applied and experimental in nature. There is plenty of room for 
+theoretical studies building off of first principles in wave propagation and 
+mechanics. These kinds of studies are much needed in order to fully and 
+accurately characterize phononic media. First, past studies related to phononic 
+media are reviewed in order to examine already explored avenues of research. 
+Afterwards, more open fields of study are presented including damping, 
+nonlinear systems, disordered phononic media, and dynamic effective properties.
 
 %------------------------  HISTORY OF PHONONIC MEDIA   ------------------------%
 %  You don't need to be too verbose here. Yes, include when these materials 
@@ -170,7 +177,8 @@ after the proposal of photonic crystals in 1987 by Yalonovitch and John
 \cite{hussein14}. The 1992 paper by Sigalas and Economou \cite{sigalas92} 
 proposed a 2D phononic 
 crystal where only in-plane shear and longitudinal waves were considered and 
-did observe the presence of band gaps. By the next year, Sigalas and Economou 
+they did observe the presence of band gaps. By the next year, Sigalas and 
+Economou 
 were trying to find configurations that resulted in the largest band gaps 
 \cite{sigalas93}. They 
 found that, for elastic waves, the matrix should be stiffer and denser than the 
@@ -187,7 +195,8 @@ There have also been applications of phononic crystals as fluid
 sensors to determine rheological properties, focusing of acoustic waves, 
 acoustic/elastic logic gates, and coupling of acoustic/elastic waves with 
 electromagnetic signals. If these previous applications are called passive wave 
-control, the research in active wave control grew right along side these 
+control, the research in active wave control, where the material properties are 
+tunable, grew right along side these 
 efforts also beginning in the early 2000s and leading up to today.
 
 Parallel to this thrust of phononic crystal research in the early 2000s was the 
@@ -195,20 +204,20 @@ discovery of band gaps much lower than expected in a 3D lattice of rubber
 coated lead spheres in an epoxy matrix \cite{liu00}. Materials such as these 
 are now called 
 acoustic/elastic metamaterials, and are distinguished from phononic crystals by 
-the presence of this other band gap found below the one as characterized by the 
+the presence of another band gap found below the one as characterized by the 
 periodicity of the lattice (due to Bragg scattering). They are often times 
 called subwavelength band gaps for this reason. These band gaps are instead due 
 to local resonance and are the defining property of acoustic/elastic 
-metamaterials which are sometimes called locally resonant phononic crystals. 
-Unlike, Bragg scattering band gaps the spatial arrangement of these resonators 
-do not have an effect on the formation of local resonance band gap. These 
-included resonators do not need to be arranged in a lattice, but often are in 
-order to facilitate a unit cell analysis of the material.
+metamaterials which are sometimes referred to as locally resonant phononic 
+crystals. Unlike, Bragg scattering band gaps the spatial arrangement of these 
+resonators do not have an effect on the formation of local resonance band gap. 
+These included resonators do not need to be arranged in a lattice, but often 
+are in order to facilitate a unit cell analysis of the material.
 
 Applications of acoustic/elastic metamaterials largely mirrors those of 
 phononic crystals without local resonance. The presence of this subwavelength 
-bandgap, however, can be combined with the Bragg band gap to create an even 
-larger range of frequencies. Outside of acoustic/elastic wave control, the 
+bandgap can be combined with the Bragg band gap to create an even 
+larger range of frequencies for better acoustic/elastic wave control. The 
 subwavelength band gap can be exploited for acoustic imaging with resolvable 
 length scales below what is usually allowed by the diffraction limit. A radical 
 application of these materials is acoustic cloaking where metamaterials can be 
@@ -220,12 +229,11 @@ used to ``steer" acoustic and elastic waves around an object \cite{norris11}.
 %  field of research is today and your place in it. Inculde plenty of references
 %------------------------------------------------------------------------------%
 \subsection{Active research areas and open fields}
-Despite the explosion of interest in phononic media, the majority of the 
-literature is focused on the application of them and the band gap phenomena. As 
-such there are many avenues of theoretical research that need to be explored 
-from a traditional mechanics point of view. The incorporation of damping and 
-disorder can greatly add to the predictive capability of models. A theoretical 
-exploration of nonlinear systems may lead to more novel applications. 
+Despite the explosion of interest in phononic media, much of the 
+literature is focused on direct applications. Many avenues of theoretical 
+research need to be explored from a mechanics point of view. The incorporation 
+of damping, nonlinearities, and disorder can greatly add to the predictive 
+capability of models and may lead to more novel applications. 
 
 %Last, due 
 %to the nonlocal effects at higher frequencies and away from the long 
@@ -291,7 +299,7 @@ nonlinearities to be a part of forcing term.
 
 %  need to understand what is meant by nonlinear in this case 
 Another way to study the dispersion properties of nonlinear systems, is to 
-consider the real time evolution of a system. This provided the system is 
+consider the real time evolution of a system -provided the system is 
 simple enough such as a discrete lumped parameter system consisting of masses 
 and springs. Frazier and Kochmann do just this when considering systems with 
 bistable elements \cite{frazier16}. In the band gap of these phononic 
@@ -408,10 +416,10 @@ Given the equation
 where \underline{c(x) is periodic in} $x$, Floquet's theorem says that 
 (\ref{floqueteqn}) has two solutions
 \begin{align*}
-u(x) &= \tilde{u}_1(x)e^{ikx} \\
-&= \tilde{u}_2(x)e^{-ikx}
+u_1(x) &= \tilde{u}_1(x)e^{ikx} \\
+u_2(x) &= \tilde{u}_2(x)e^{-ikx}
 \end{align*}
-In the above, $\tilde{f}_1$ and $\tilde{f}_2$ are also periodic in $x$ 
+In the above, $\tilde{u}_1(x)$ and $\tilde{u}_2(x)$ are also periodic in $x$ 
 \cite{magnus79}.
 
 Bloch's theorem is similar to Floquet's theorem but applies to higher 
@@ -463,7 +471,9 @@ Taking the square root of the above
 \omega = \pm c k
 \end{equation}
 This equation gives a relationship between the frequency of the wave and its 
-wave number. We call relations of this type dispersion relations. It is 
+wave number. The positive solution corresponds to a wave propagating to the 
+right, and the negative solution corresponding to waves propagating to the 
+left. We call relations of this type dispersion relations. It is 
 important to note that this is a constraint on waves propagating in a system 
 governed by (\ref{swe}). If a wave is a solution to (\ref{swe}) of the form 
 (\ref{scalarsoln}) its wavenumber and frequency must satisfy the above equation.
@@ -491,7 +501,7 @@ v_p = v_p(\omega) = v_p(\omega(k))
 \end{equation}
 
 \subsubsection{Monatomic lattice} \label{monatomic}
-Take a system of $n$ masses and springs like in Figure \ref{fig:ms} 
+Consider a system of $n$ masses and springs like in Figure \ref{fig:ms} 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{mass-spring.pdf}
@@ -499,14 +509,14 @@ Take a system of $n$ masses and springs like in Figure \ref{fig:ms}
 	the left and right.}
 	\label{fig:ms}
 \end{figure}
-Lets write the equations of motion for the $n$th mass system.
+The equation of motion for the $n$th mass in the system is
 \begin{equation} \label{eqnms}
 m\frac{\partial^2 u_n}{\partial t^2} = k(u_{n-1} - u_n) - k(u_n - u_{n+1}) = 
 ku_{n-1} - 2ku_n + ku_{n+1} 
 \end{equation}
 where $u_n$ gives the displacement of the $n$th node and $k$ is the spring 
-constant of each spring. To acquire, the dispersion relation for this system we 
-assume a solution of the form
+constant of each spring. To acquire the dispersion relation for this system we 
+assume a Bloch wave solution of the form
 \begin{equation} \label{bloch}
 u_n(x,t) = \tilde{u}(x_n)e^{i(kx_n - \omega t)}
 \end{equation}
@@ -545,7 +555,10 @@ letting $\Omega=\frac{\omega}{\omega_0}$ and $\mu=kl$. Then,
 \begin{equation}
 \Omega = \pm \sqrt{2(1-cos(\mu))}
 \end{equation}
-The positive part is plotted in Figure \ref{fig:dr}.
+The positive part is plotted in Figure \ref{fig:dr}. Notice that it is periodic 
+in $\mu$. The section of the dispersion relation from $-\pi$ to $\pi$ is called 
+the first Brillouin zone. Due to symmetry, we also define the irreducible 
+Brillouin zone (IBZ) as the section from $0$ to $\frac{\pi}{2}$. 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{dispersion-rln.pdf}
@@ -629,6 +642,7 @@ Finally, we can write
 \left[\mathbf{K}_n + \mathbf{K}_{n-1}e^{-i\mu} + \mathbf{K}_{n+1}e^{i\mu} 
 -\omega^2 \mathbf{M} \right] \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
 \end{equation}
+and condensing all of the stiffness matrices
 \begin{equation}
 \left[\mathbf{\tilde{K}}(\mu) -\omega^2 \mathbf{M} \right] 
 \mathbf{\hat{u}}(\mu)e^{in\mu} = 0
@@ -636,7 +650,7 @@ Finally, we can write
 Calculating the determinant of the matrix on the left we get the relation
 \begin{equation}
 \omega =\pm \sqrt{k\frac{m_1+m_2}{m_1m_2} \pm k 
-\sqrt{\left(\frac{m_1+m_2}{m_1m_2}\right) - \frac{4(\sin{ka})^2}{m_1m_2}}}
+\sqrt{\left(\frac{m_1+m_2}{m_1m_2}\right) - \frac{4(\sin{\mu})^2}{m_1m_2}}}
 \end{equation}
 The dispersion relation for the diatomic lattice is shown in Figure 
 \ref{fig:dia-exact}. Notice that there are now two curves unlike in the 
@@ -702,13 +716,17 @@ Alternatively, asserting a Bloch wave solution after using the finite
 difference approximation results in an eigenvalue value problem that yields 
 eigenfrequencies given an imposed wave number. 
 
-The finite element method is useful for complex material geometries. When 
-applied to periodic systems, the domain of computation is greatly reduced via 
-application of Bloch's theorem. A weak from of the governing equations is still 
+The finite element method is useful for complex material geometries. A weak 
+from of the governing equations is still 
 formulated by multiplying by a trial function, but the integration is performed 
 only over a unit cell which represents the phononic medium of interest. After 
 approximating the solution and trial function with appropriate weight 
-functions, Bloch's theorem can be used to impose a Bloch condition on the 
+functions, we can proceed in two ways much like in the finite difference 
+method. It is possible to use a central difference approximation for the time 
+derivative and calculate the real time evolution (for more detail see Appendix 
+\ref{femrte}). This, however, is 
+computationally inefficient. Instead, we apply Bloch's theorem. In this case, 
+Bloch's theorem can be used to impose a Bloch condition on the 
 boundary which reduces the degrees of freedoms of the system by relating the 
 displacements at one boundary to the opposite boundary plus a phase multiplier.
 This process results in an eigenvalue problem similar to the above two cases. 
@@ -740,13 +758,13 @@ system inside and outside of the band gaps and stop bands. Additionally, the
 to find the dispersion relations in each case. 
 
 \subsection{Monatomic lattice}
-The monatomic lattice with 100 masses is modeled using the equations of motion 
+A monatomic lattice with 100 masses is modeled using the equations of motion 
 (\ref{eqnms}) and the Verlet integration method. The Verlet integration method 
 is involves a central difference approximation for the time derivative in 
 Newton's equations. See Appendix \ref{verlet} for more details on the Verlet 
 integration method. One end of the system is subject to a harmonic excitation 
 with a prescribed frequency, and the other end is allowed to freely move. For 
-the material parameter, we choose $m=1$ and $k=1$.
+the material parameters, we choose $m=1$ and $k=1$.
 
 In order to compute the dispersion relation of the system, a range of 
 frequencies is prescribed from $\Omega=0$ to $\Omega=2$. At each frequency and 
@@ -763,9 +781,9 @@ frequency. The result is Figure \ref{fig:matlab-dr}.
 	excitation frequencies are identified and plotted}
 	\label{fig:matlab-dr}
 \end{figure}
-The results are a little noisy which can be attributed to relflections at the 
-boundaries of the system. If the chain of masses was longer, this would not be 
-a problem. 
+The results are in good agreement with the derived dispersion relation, but 
+there is noticeable error due to reflections at the free end of the chain. If 
+the chain of masses was longer, this would not be less of a problem. 
 
 Increasing the frequency of the harmonic excitation above the cutoff frequency 
 of the system it is easy to explore the attenuation effect at the stop band as 
@@ -789,7 +807,8 @@ stop band.
 From the finite difference time domain method, it is also possible to calculate 
 the values of the imaginary wavenumbers that occur for frequencies above cutoff 
 frequencies. This is done by fitting a complex exponential to the evanescent 
-waves and finding the power of the exponential term. Figure  has the results of 
+waves and finding the power of the exponential term. Figure 
+\ref{fig:imagwavenumres} has the results of 
 the fitting process overlaid on top of the exact plot of the evanescent 
 wavenumbers. 
 \begin{figure}[!htbp]
@@ -803,10 +822,11 @@ Closer to the cutoff frequency, the results are not in good agreement. This is
 due to the reflections of the wave at the boundary of the system. 
 
 Another way to identify band gaps in a system without calculating the Fourier 
-transform is by comparing the displacement at the excited end of the system to 
-the displacements at the free end. Sweeping over frequencies and plotting the 
+transform is by comparing the amplitude of harmonic excitation to 
+the maximum displacement at the free end. Sweeping over frequencies and 
+plotting the 
 ratio of displacements at each end results in a transmission loss diagram as in 
-Figure \ref{fig:tlms}
+Figure \ref{fig:tlms}.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{tl-diag.pdf}
@@ -831,10 +851,10 @@ are plotted in Figure \ref{fig:diadr}.
 	method.}
 	\label{fig:diadr}
 \end{figure}
-From the real time evolution we are able to recover the band gap and the stop 
-band between the two modes of vibration. Additionally, the transmission-loss 
-diagram is also plotted in Figure \ref{fig:tlds} to illustrate the attenuation 
-that the system undergoes.
+From the real time evolution we are able to recover the band gap between the 
+two modes of vibration and also the stop band. Additionally, the 
+transmission-loss diagram is also plotted in Figure \ref{fig:tlds} to 
+illustrate the attenuation that the system undergoes.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{dia-tl-diag.pdf}
@@ -999,10 +1019,10 @@ the uniform bar is plotted in Figure \ref{fig:unifbar}.
 \end{figure}
 The dispersion relation has only has straight lines indicating there is no 
 dispersion which is what we expect for a uniform material. No band gaps form 
-because there are no periodic inclusions to produce Bragg scattering. There are 
-several modes corresponding to forward and backward propagating waves and it is 
-verified that the wave speed is equal to one since when $k=\pm \omega$ for all 
-wavenumbers.
+because there are no periodic inclusions or structure to produce Bragg 
+scattering. There are several modes corresponding to forward and backward 
+propagating waves and it is verified that the wave speed is equal to one since 
+when $k=\pm \omega$ for all wavenumbers.
 
 \subsection{Layered composite}
 For the layered composite, a bimaterial unit cell is consider as shown in 
@@ -1261,7 +1281,8 @@ x^{t+1}_{n} = 2x^{t}_{n} - x^{t-1}_{n} + a(x^{t}_n)\Delta t^2
 where $t$ denotes the current time step, $x$ is the particle position, $a(x_n)$ 
 is the acceleration, and $\Delta t$ is suitably small time step. b
 
-\subsection{Finite difference in time for real time evolution FEM}
+\subsection{Finite difference in time for real time evolution FEM} 
+\label{femrte}
 For equation (\ref{matrixform}), it is possible to apply a finite difference 
 method in time in order to get the real time evolution of the uniform bar. 
 First, in order to apply the displacement boundary conditions at the left 
