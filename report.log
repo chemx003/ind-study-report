@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  14 MAY 2018 20:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.26)  4 JUN 2018 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,33 +257,33 @@ e
 
 
 [2] [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
  [2] [3]
 [4] [5] [6] [7] <images/mass-spring.pdf, id=47, 588.1975pt x 75.28125pt>
 File: images/mass-spring.pdf Graphic file (type pdf)
 
 <use images/mass-spring.pdf>
-Package pdftex.def Info: images/mass-spring.pdf used on input line 533.
+Package pdftex.def Info: images/mass-spring.pdf used on input line 529.
 (pdftex.def)             Requested size: 352.31625pt x 45.09212pt.
  [8 <./images/mass-spring.pdf>]
 <images/dispersion-rln.pdf, id=64, 497.86pt x 316.18124pt>
 File: images/dispersion-rln.pdf Graphic file (type pdf)
 
 <use images/dispersion-rln.pdf>
-Package pdftex.def Info: images/dispersion-rln.pdf used on input line 590.
+Package pdftex.def Info: images/dispersion-rln.pdf used on input line 586.
 (pdftex.def)             Requested size: 281.85587pt x 179.00456pt.
  [9 <./images/dispersion-rln.pdf>]
 <images/diatomic-mass-spring.pdf, id=82, 588.1975pt x 75.28125pt>
 File: images/diatomic-mass-spring.pdf Graphic file (type pdf)
 
 <use images/diatomic-mass-spring.pdf>
-Package pdftex.def Info: images/diatomic-mass-spring.pdf used on input line 633
+Package pdftex.def Info: images/diatomic-mass-spring.pdf used on input line 629
 .
 (pdftex.def)             Requested size: 352.31625pt x 45.09212pt.
  [10 <./images/diatomic-mass-spring.pdf>]
@@ -291,35 +291,35 @@ Package pdftex.def Info: images/diatomic-mass-spring.pdf used on input line 633
 File: images/diatomic-exact.pdf Graphic file (type pdf)
 
 <use images/diatomic-exact.pdf>
-Package pdftex.def Info: images/diatomic-exact.pdf used on input line 691.
+Package pdftex.def Info: images/diatomic-exact.pdf used on input line 687.
 (pdftex.def)             Requested size: 281.85587pt x 226.49518pt.
  [11 <./images/diatomic-exact.pdf>] [12]
 [13] <images/matlab-dr.pdf, id=113, 642.4pt x 477.785pt>
 File: images/matlab-dr.pdf Graphic file (type pdf)
 
 <use images/matlab-dr.pdf>
-Package pdftex.def Info: images/matlab-dr.pdf used on input line 866.
+Package pdftex.def Info: images/matlab-dr.pdf used on input line 862.
 (pdftex.def)             Requested size: 281.85587pt x 209.63551pt.
 
 <images/snap-f19.pdf, id=114, 655.44875pt x 392.46625pt>
 File: images/snap-f19.pdf Graphic file (type pdf)
 
 <use images/snap-f19.pdf>
-Package pdftex.def Info: images/snap-f19.pdf used on input line 883.
+Package pdftex.def Info: images/snap-f19.pdf used on input line 879.
 (pdftex.def)             Requested size: 281.85587pt x 168.76917pt.
 
 <images/snap-f21.pdf, id=115, 705.63625pt x 418.56375pt>
 File: images/snap-f21.pdf Graphic file (type pdf)
 
 <use images/snap-f21.pdf>
-Package pdftex.def Info: images/snap-f21.pdf used on input line 889.
+Package pdftex.def Info: images/snap-f21.pdf used on input line 885.
 (pdftex.def)             Requested size: 281.85587pt x 167.18622pt.
 
 <images/im-wavenum-res.pdf, id=116, 633.36626pt x 486.81876pt>
 File: images/im-wavenum-res.pdf Graphic file (type pdf)
 
 <use images/im-wavenum-res.pdf>
-Package pdftex.def Info: images/im-wavenum-res.pdf used on input line 903.
+Package pdftex.def Info: images/im-wavenum-res.pdf used on input line 899.
 (pdftex.def)             Requested size: 281.85587pt x 216.6448pt.
  [14 <./images/matlab-dr.pdf>] [15 <./images/snap-f19.pdf> <./images/snap-f21.p
 df
@@ -329,21 +329,21 @@ multiple pdfs with page group included in a single page
 >] <images/tl-diag.pdf, id=154, 604.2575pt x 481.8pt>
 File: images/tl-diag.pdf Graphic file (type pdf)
  <use images/tl-diag.pdf>
-Package pdftex.def Info: images/tl-diag.pdf used on input line 919.
+Package pdftex.def Info: images/tl-diag.pdf used on input line 915.
 (pdftex.def)             Requested size: 281.85587pt x 224.73308pt.
 
 <images/diatomic-dr.pdf, id=155, 621.32124pt x 484.81125pt>
 File: images/diatomic-dr.pdf Graphic file (type pdf)
 
 <use images/diatomic-dr.pdf>
-Package pdftex.def Info: images/diatomic-dr.pdf used on input line 935.
+Package pdftex.def Info: images/diatomic-dr.pdf used on input line 931.
 (pdftex.def)             Requested size: 281.85587pt x 219.93108pt.
 
 <images/dia-tl-diag.pdf, id=156, 638.385pt x 491.8375pt>
 File: images/dia-tl-diag.pdf Graphic file (type pdf)
 
 <use images/dia-tl-diag.pdf>
-Package pdftex.def Info: images/dia-tl-diag.pdf used on input line 947.
+Package pdftex.def Info: images/dia-tl-diag.pdf used on input line 943.
 (pdftex.def)             Requested size: 281.85587pt x 217.15215pt.
  [16 <./images/im-wavenum-res.pdf>] [17 <./images/tl-diag.pdf> <./images/diatom
 ic-dr.pdf
@@ -354,20 +354,20 @@ n: multiple pdfs with page group included in a single page
 <images/unifbar.pdf, id=198, 610.28pt x 482.80376pt>
 File: images/unifbar.pdf Graphic file (type pdf)
  <use images/unifbar.pdf>
-Package pdftex.def Info: images/unifbar.pdf used on input line 1103.
+Package pdftex.def Info: images/unifbar.pdf used on input line 1095.
 (pdftex.def)             Requested size: 281.85587pt x 222.9912pt.
 
 <images/layrd-unit-cell.pdf, id=199, 276.03125pt x 168.63pt>
 File: images/layrd-unit-cell.pdf Graphic file (type pdf)
 
 <use images/layrd-unit-cell.pdf>
-Package pdftex.def Info: images/layrd-unit-cell.pdf used on input line 1120.
+Package pdftex.def Info: images/layrd-unit-cell.pdf used on input line 1112.
 (pdftex.def)             Requested size: 234.8775pt x 143.4957pt.
 
 <images/layrd.pdf, id=200, 598.235pt x 485.815pt>
 File: images/layrd.pdf Graphic file (type pdf)
  <use images/layrd.pdf>
-Package pdftex.def Info: images/layrd.pdf used on input line 1129.
+Package pdftex.def Info: images/layrd.pdf used on input line 1121.
 (pdftex.def)             Requested size: 281.85587pt x 228.88905pt.
 
 [20] [21 <./images/unifbar.pdf> <./images/layrd-unit-cell.pdf
@@ -378,63 +378,63 @@ usion: multiple pdfs with page group included in a single page
 File: images/twodunitcell.pdf Graphic file (type pdf)
 
 <use images/twodunitcell.pdf>
-Package pdftex.def Info: images/twodunitcell.pdf used on input line 1197.
+Package pdftex.def Info: images/twodunitcell.pdf used on input line 1189.
 (pdftex.def)             Requested size: 258.36668pt x 250.59265pt.
  [22 <./images/layrd.pdf>] [23 <./images/twodunitcell.pdf>] <images/twodunifcel
 l.pdf, id=246, 336.25626pt x 344.28625pt>
 File: images/twodunifcell.pdf Graphic file (type pdf)
 
 <use images/twodunifcell.pdf>
-Package pdftex.def Info: images/twodunifcell.pdf used on input line 1251.
+Package pdftex.def Info: images/twodunifcell.pdf used on input line 1243.
 (pdftex.def)             Requested size: 117.43875pt x 120.24457pt.
 
 <images/twodunif.pdf, id=247, 627.34375pt x 483.8075pt>
 File: images/twodunif.pdf Graphic file (type pdf)
 
 <use images/twodunif.pdf>
-Package pdftex.def Info: images/twodunif.pdf used on input line 1265.
+Package pdftex.def Info: images/twodunif.pdf used on input line 1257.
 (pdftex.def)             Requested size: 375.80544pt x 289.82904pt.
 
 <images/twodlayrdcell.pdf, id=248, 348.30125pt x 348.30125pt>
 File: images/twodlayrdcell.pdf Graphic file (type pdf)
 
 <use images/twodlayrdcell.pdf>
-Package pdftex.def Info: images/twodlayrdcell.pdf used on input line 1284.
+Package pdftex.def Info: images/twodlayrdcell.pdf used on input line 1276.
 (pdftex.def)             Requested size: 117.43875pt x 117.43764pt.
 
 <images/twodlayrd16.pdf, id=249, 607.26875pt x 453.695pt>
 File: images/twodlayrd16.pdf Graphic file (type pdf)
 
 <use images/twodlayrd16.pdf>
-Package pdftex.def Info: images/twodlayrd16.pdf used on input line 1290.
+Package pdftex.def Info: images/twodlayrd16.pdf used on input line 1282.
 (pdftex.def)             Requested size: 375.80544pt x 280.76878pt.
 
 <images/twodlayrd.pdf, id=250, 621.32124pt x 486.81876pt>
 File: images/twodlayrd.pdf Graphic file (type pdf)
 
 <use images/twodlayrd.pdf>
-Package pdftex.def Info: images/twodlayrd.pdf used on input line 1297.
+Package pdftex.def Info: images/twodlayrd.pdf used on input line 1289.
 (pdftex.def)             Requested size: 375.80544pt x 294.44826pt.
 
 <images/twodrescell.pdf, id=251, 342.27875pt x 368.37625pt>
 File: images/twodrescell.pdf Graphic file (type pdf)
 
 <use images/twodrescell.pdf>
-Package pdftex.def Info: images/twodrescell.pdf used on input line 1312.
+Package pdftex.def Info: images/twodrescell.pdf used on input line 1304.
 (pdftex.def)             Requested size: 117.43875pt x 126.39293pt.
 
 <images/twodres16.pdf, id=252, 602.25pt x 461.725pt>
 File: images/twodres16.pdf Graphic file (type pdf)
 
 <use images/twodres16.pdf>
-Package pdftex.def Info: images/twodres16.pdf used on input line 1318.
+Package pdftex.def Info: images/twodres16.pdf used on input line 1310.
 (pdftex.def)             Requested size: 375.80544pt x 288.12651pt.
 
 <images/twodres.pdf, id=253, 619.31375pt x 470.75874pt>
 File: images/twodres.pdf Graphic file (type pdf)
 
 <use images/twodres.pdf>
-Package pdftex.def Info: images/twodres.pdf used on input line 1326.
+Package pdftex.def Info: images/twodres.pdf used on input line 1318.
 (pdftex.def)             Requested size: 375.80544pt x 285.6683pt.
  [24 <./images/twodunifcell.pdf>] [25 <./images/twodunif.pdf> <./images/twodlay
 rdcell.pdf
@@ -478,7 +478,7 @@ r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (35 pages, 1332802 bytes).
+Output written on report.pdf (35 pages, 1332661 bytes).
 PDF statistics:
  389 PDF objects out of 1000 (max. 8388607)
  271 compressed objects within 3 object streams

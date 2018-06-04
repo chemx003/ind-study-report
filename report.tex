@@ -55,8 +55,8 @@ frequencies of waves cannot propagate. These frequency band gaps have been
 utilized in many engineering applications related to vibrations and the control 
 of acoustic and elastic waves.
 
-The goal of the independent study was to provided the necessary tools for 
-further research involving wave propagation in phononic media. To acheive this 
+The goal of the independent study was to provide the necessary tools for 
+further research involving wave propagation in phononic media. To achieve this 
 goal there were three objectives:
 \begin{enumerate}
 	\item Study heterogeneous materials and the associated mathematical methods 
@@ -66,7 +66,7 @@ goal there were three objectives:
 	\item Complete a computational project related to the above studies 
 \end{enumerate}
 The study of heterogeneous materials was completed via a set of exercises from 
-the lecture notes of Prof. Pont Casta\~neda \cite{pontenotes}. In this report, 
+the lecture notes of Prof. Ponte Casta\~neda \cite{pontenotes}. In this report, 
 the focus will be on the later two items. To this end, phononic media, their 
 applications, and the interesting behavior that is the 
 presence of frequency band gaps where waves cannot propagate is presented.
@@ -77,13 +77,11 @@ further studies in the report and in further research. While it is favorable to
 have exact analytical expressions for these dispersion relations, it is not 
 possible to calculate these by hand for more complicated materials. As such, we 
 must utilize computational methods, several of which are presented in varying 
-levels of 
-detail. For future research, it is planned to use the finite element method, 
-and, therefore, there is an emphasis on this method in the independent study. 
-Finite elements 
-is used in the 1D and 2D case in order to obtain the dispersion relation for a 
-variety of materials. These computational tools will be integral for further 
-research related to phononic media. 
+levels of detail. For future research, it is planned to use the finite element 
+method, and, therefore, there is an emphasis on this method in the independent 
+study. The finite element method is used in the 1D and 2D case in order to 
+obtain the dispersion relation for a variety of materials. These computational 
+tools will be integral for further research related to phononic media. 
 
 %----------------------------  PHONONIC MEDIA  --------------------------------%
 %  This subsection is dedicatied to illustrating what these materials can do 
@@ -99,16 +97,15 @@ lattice of inclusions (or voids). There are several levels of classification
 within phononic media. In the literature a distinction, is made between 
 phononic materials and phononic structures. Phononic materials are infinite in 
 extent while phononic structures are finite in extent \cite{hussein10}. 
-Phononic crystals refer to a heterogenous material or non-uniform material 
+Phononic crystals refer to a heterogeneous material or non-uniform material 
 where the material phases, that may be fluid or solid, have a periodic 
 arrangement in space \cite{hussein14}. The constituents may be arranged in such 
 a way as to have a band gap in a fixed frequency range. This band gap may even 
 be tunable by using an outside field to modulate material properties. 
 A further class of phononic media that is of much interest are acoustic/elastic 
-metamaterials. 
-These metamaterials possess ``local resonance" which is a different way for 
-producing 
-band gaps that is not seen in regular phononic crystals. 
+metamaterials. These metamaterials possess ``local resonance" which is a 
+different way for producing band gaps that is not seen in regular phononic 
+crystals. 
 
 %  Applications of phononic media
 The existence of frequency band gaps in these materials has resulted in many 
@@ -178,7 +175,7 @@ for theoretical studies building off of first principles in wave propagation
 and mechanics. These kinds of studies are much needed in order to fully and 
 accurately characterize phononic media. First, past studies related to phononic 
 media are reviewed in order to examine already explored avenues of research. 
-Afterwards, more open fields of study are presented including damping, 
+Afterwards, active fields of research are presented including damping, 
 nonlinear systems, and disordered phononic media.
 
 %------------------------  HISTORY OF PHONONIC MEDIA   ------------------------%
@@ -245,7 +242,7 @@ object \cite{norris11}.
 %  This is where you need to be verbose. Show the audience you know where this
 %  field of research is today and your place in it. Inculde plenty of references
 %------------------------------------------------------------------------------%
-\subsection{Active research areas and open fields}
+\subsection{Active research areas}
 Despite the amount of interest in phononic media, much of the 
 literature is focused on direct applications. Many avenues of theoretical 
 research need to be explored from a mechanics point of view. The incorporation 
@@ -266,15 +263,15 @@ literature pertaining to damping in periodic materials and structures, phononic
 media with dissipative wave propagation has not received too much attention. 
 One method for acoustic wave propagation in sonic crystals with 
 viscous damping is to give the elastic modulus an imaginary component 
-\cite{hussein14}. 
-It wasn't until recently that damping was incorporated directly into 
-Bloch wave analysis by assuming a complex frequency \cite{hussein10}.
+\cite{hussein14}. It wasn't until recently that damping was incorporated 
+directly into Bloch wave analysis by assuming a complex frequency in time 
+\cite{hussein10}.
 
 Within the body of research on damping, studies focus on either harmonic wave 
 propagation or free wave propagation. A study of harmonic or prescribed wave 
 propagation entails one in which the frequency is confined to be real valued 
 while free wave propagation allows for complex frequency which can result in 
-attenuation of the wave in time. In either the case, the wavenumber is allowed 
+attenuation of the wave in time. In either case, the wavenumber is allowed 
 to be complex which can lead to spatial attenuation. As described in Frazier's 
 thesis, the case of harmonic wave propagation corresponds to a system that is 
 continually subjected to a periodic excitation. The case of free wave 
@@ -285,18 +282,17 @@ damping.
 For a 1D layered composite with viscous damping, Frazier is able to use a 
 transfer matrix method to derive analytical expressions for the dispersion 
 relation \cite{frazier15}. Due to the nature of the viscous damping model 
-(dependent on the 
-strain rate), at higher frequencies the effects of damping become more 
-apparent. First, it is found that the dispersion relations in the free wave and 
-harmonic wave propagation cases are identical in the absence of damping. 
-Accounting for damping, the frequency band structure tends to ascend in the 
-prescribed wave propagation case and descend in the free wave propagation case. 
-As the amount of damping increases, band gaps tend to close which is referred 
-to as band gap annihilation. Additionally, the dispersion relations, with 
-damping, in the free wave case match up with the natural frequencies of a 
-finite, phononic structure with damping. The dispersion relation, with damping, 
-in the prescribed wave case match up with observed attenuation in phononic 
-media. 
+(dependent on the strain rate), at higher frequencies the effects of damping 
+become more apparent. First, it is found that the dispersion relations in the 
+free wave and harmonic wave propagation cases are identical in the absence of 
+damping. Accounting for damping, the frequency band structure tends to ascend 
+in the prescribed wave propagation case and descend in the free wave 
+propagation case. As the amount of damping increases, band gaps tend to close 
+which is referred to as band gap annihilation. Additionally, the dispersion 
+relations, with damping, in the free wave case match up with the natural 
+frequencies of a finite, phononic structure with damping. The dispersion 
+relation, with damping, in the prescribed wave case match up with observed 
+attenuation in phononic media. 
 
 %----------------------------- NONLINEAR SYSTEMS ------------------------------%
 %  Same thing here. You will need to branch out in terms of references here.
@@ -354,13 +350,13 @@ In 2004, Zuo-Don and Jian-Chun used the finite difference time domain method to
 study a weakly disordered phononic crystal consisting of a homogeneous matrix 
 embedded with an array of cylinders \cite{zuodon04}. Disorder was added by 
 perturbing the location of the cylinders. As the disorder in the system 
-increased, it was found that the band gaps dissapeared which makes sense sense 
+increased, it was found that the band gaps vanished which makes sense since
 Bragg scattering occurs do to the periodicity of the inclusions. Chen and Wang 
 used the transfer matrix method to study a 1D layered composite where the layer 
 thickness was varied \cite{chen07}. Here they look at a localization of wave 
 propagation which is a phenomena that is expected in random materials. The 
 localization factor that they defined is also used to study band gaps as the 
-material becomes more disordered. An paper 2010 by, examined a 2d phononic 
+material becomes more disordered. An paper 2010 by, examined a 2D phononic 
 medium with circular inclusions arranged in a lattice \cite{wang10}. Disorder 
 was added to the system by increasing or decreasing the size of the inclusions 
 or displacing them by some small amount. Here they used the plane-wave 
@@ -411,7 +407,7 @@ relations provide all of the information necessary to characterize
 the behavior of waves propagating in a phononic medium. Mathematically, they 
 are a relationship between the frequency of a wave and its wavenumber. From 
 this relationship, it is possible to determine the phase velocity and group 
-velocity. Dispersion relationships immediately indicate where the frequency 
+velocity. Dispersion relations immediately indicate where the frequency 
 band gaps of a system are. For this reason, they are also called frequency band 
 diagrams or frequency band structures.
 
@@ -558,7 +554,7 @@ Thus,
 \begin{equation}
 \left[2\omega_0^2(1 - \cos(kl)) - \omega^2\right]u_n = 0
 \end{equation}
-where $\omega_0 = \sqrt{k/m}$ The above has a trivial solution when $u_n = 0$. 
+where $\omega_0 = \sqrt{k/m}$. The above has a trivial solution when $u_n = 0$. 
 Not so trivial solutions exist when
 \begin{equation}
 2\omega_0^2(1 - \cos(kl)) - \omega^2= 0
@@ -568,8 +564,8 @@ spring system as
 \begin{equation} \label{monatomicdisp}
 \omega = \pm \sqrt{2\omega_0^2(1 - \cos(kl))}
 \end{equation}
-It is now becoming apparent that in a system of $n$ masses and springs that 
-there is dispersion. To see this explicitly, write the phase velocity
+It is now becoming apparent that the monatomic lattice has dispersive behavior. 
+To see this explicitly, write the phase velocity
 \begin{equation}
 v_p = \frac{w(k)}{k} = \frac{\pm\sqrt{2\omega_0^2(1 - \cos(kl))}}{k}
 \end{equation}
@@ -597,8 +593,8 @@ along the curve for different waves propagating through the system.
 
 At first glance, it appears that there are no frequencies above $\Omega = 2$. 
 In this region (called the stop band), waves experience attenuation and 
-exponentially die off. Wave numbers in the stop band are imaginary. Looking at 
-(\ref{bloch}), it becomes obvious where the attenuation comes from. Waves whose 
+exponentially die off. Looking at (\ref{bloch}), it becomes obvious where the 
+attenuation comes from if consider imaginary wave numbers. Waves whose 
 wave numbers are imaginary are called \emph{evanescent} waves.
 
 Solving for wavenumber in terms of a given frequency 
@@ -1040,24 +1036,13 @@ is a single multiplicative factor:
 \begin{equation}
 a(x+h) = e^{ik_xh}a(x)\quad\textnormal{(Bloch condition)}
 \end{equation}
-The multiplicative factor in the boundary condition shifts is such that when 
-the wave reaches a boundary it is phase shifted to match the wave at the 
-opposite boundary such that there is no interference.
+The multiplicative factor in the boundary condition adjusts the phase of the 
+wave to match the phase at the opposite boundary. This is done such that there 
+is no interference when the wave ``reenters" the unit cell.
 
-Enforcing the condition is done via a linear transformation which in one 
-dimension is
-\begin{equation}
-T = 
-\begin{bmatrix}
-1 && \mathbf{0} \\
-\mathbf{0} && \mathbf{I}\\
-e^{ik_xh} && \mathbf{0}
-\end{bmatrix}
-\end{equation}
-where $\mathbf{I}$ is an identity matrix with dimensions equal to the number of 
-interior nodes (in the one dimensional case this is the total number of nodes 
-minus two). Using this transformation matrix we reduce the number of degrees of 
-freedoms in our system and write
+In order to enforce the Bloch condition, the degrees of freedom must be divided 
+based on whether they are on the left or right boundary or in the interior of 
+the domain. The condition is then enforced via a linear transformation: 
 \begin{equation}
 a =
 \begin{bmatrix}
@@ -1077,6 +1062,13 @@ a_{int}
 \end{bmatrix}
 = T \hat{a}
 \end{equation}
+where $\mathbf{I}$ is an identity matrix with dimensions equal to the number of 
+interior nodes (in the one dimensional case this is the total number of nodes 
+minus two). We denote the linear transformation matrix as $T$.
+Applying the linear transformation to the system reduces the degrees of freedom 
+by one in this case, but it will be seen that this reduction is much more in 
+the 2D case.
+
 Our eigenvalue problem is now
 \begin{equation}
 (K-\omega^2M)T\hat{a} = 0
@@ -1343,8 +1335,7 @@ polarization my propagate.
 %------------------------------------------------------------------------------%
 \section{Future work}
 In the near future, it would be interesting to examine the effect of disorder 
-on 
-the diatomic mass spring system. Additionally, it would be of interest to 
+on the diatomic mass spring system. Additionally, it would be of interest to 
 develop a finite element method for analysis of disordered materials. Perhaps a 
 modification of the Bloch condition or the consideration of ``supercell" may be 
 what is needed. Additionally, it is of future research interest to explore 
